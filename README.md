@@ -1,0 +1,4 @@
+stredisko
+=========
+
+Střediskový web
