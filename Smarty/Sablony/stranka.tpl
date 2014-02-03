@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 {config_load file='nastaveni.conf'}
 
 <html>
