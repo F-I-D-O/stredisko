@@ -12,13 +12,17 @@
     {* JQuery *}
     <script src="{$smarty.const.ADRESA_JQUERY}"></script>
 
-    {* Hlavní skript *}
-    <script src="{$smarty.const.ADRESA_GLOBALNI_SKRIPT}"></script>
+	{* jquery.reject*}
+	<script src="Knihovny/jReject/jquery.reject.min.js" type="text/javascript"></script>
+	<link rel="stylesheet" href="Knihovny/jReject/jquery.reject.css" type="text/css" />
 
 	{* nivo slider *}
 	<link rel="stylesheet" href="nivo-slider/nivo-slider.css" type="text/css" />
 	<link rel="stylesheet" href="nivo-slider/themes/default/default.css" type="text/css" />
 	<script src="nivo-slider/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+    {* Hlavní skript *}
+    <script src="{$smarty.const.ADRESA_GLOBALNI_SKRIPT}"></script>
 
 	{* pro správnou počáteční stránku *}
 	<meta name="pocatecni_stranka" content="{$smarty.const.POCATECNI_ADRESA}">

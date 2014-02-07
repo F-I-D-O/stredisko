@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.16, created on 2014-02-02 22:44:39
+<?php /* Smarty version Smarty-3.1.16, created on 2014-02-07 17:13:16
          compiled from "C:\xampp\htdocs\stredisko\Smarty\Sablony\stranka.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:2241452dc133f204438-05851695%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '77e481be67e2a86936f0f6196c84c06e3402bbc8' => 
     array (
       0 => 'C:\\xampp\\htdocs\\stredisko\\Smarty\\Sablony\\stranka.tpl',
-      1 => 1391377385,
+      1 => 1391789593,
       2 => 'file',
     ),
   ),
@@ -27,7 +27,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_52dc133f270840_65605470')) {function content_52dc133f270840_65605470($_smarty_tpl) {?>
+<?php if ($_valid && !is_callable('content_52dc133f270840_65605470')) {function content_52dc133f270840_65605470($_smarty_tpl) {?><!DOCTYPE html>
 <?php  $_config = new Smarty_Internal_Config('nastaveni.conf', $_smarty_tpl->smarty, $_smarty_tpl);$_config->loadConfigVars(null, 'local'); ?>
 
 <html>
@@ -43,14 +43,18 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     <script src="<?php echo @constant('ADRESA_JQUERY');?>
 "></script>
 
-    
-    <script src="<?php echo @constant('ADRESA_GLOBALNI_SKRIPT');?>
-"></script>
+	
+	<script src="Knihovny/jReject/jquery.reject.min.js" type="text/javascript"></script>
+	<link rel="stylesheet" href="Knihovny/jReject/jquery.reject.css" type="text/css" />
 
 	
 	<link rel="stylesheet" href="nivo-slider/nivo-slider.css" type="text/css" />
 	<link rel="stylesheet" href="nivo-slider/themes/default/default.css" type="text/css" />
 	<script src="nivo-slider/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+    
+    <script src="<?php echo @constant('ADRESA_GLOBALNI_SKRIPT');?>
+"></script>
 
 	
 	<meta name="pocatecni_stranka" content="<?php echo @constant('POCATECNI_ADRESA');?>

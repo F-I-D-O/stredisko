@@ -5,7 +5,8 @@ const JMENO_JIZNI_KRIZ = 'JizniKriz';
 const JMENO_VLOCKA = 'Vlocka';
 const JMENO_HIAWATHA = 'Hiawatha';
 
-const KOREN_WEBU = 'stredisko';
+//const KOREN_WEBU = 'stredisko';
+const KOREN_WEBU = '';
 
 const ODDELOVAC_ADRESARU = '/';
 
@@ -22,7 +23,7 @@ const HLAVNI_TRIDA_SMARTY = 'Smarty-3.1.16/libs/Smarty.class.php';
 const SOUBOR_STYLU = 'hlavni.css';
 const SOUBOR_SKRIPTU = 'hlavni.js';
 
-const ADRESA_JQUERY = '//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js';
+const ADRESA_JQUERY = '//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js';
 
 
 /* Smarty */
@@ -36,7 +37,7 @@ const ADRESAR_SMARTY_CACHE = 'Cache';
 const FOTKA_VLOCKA = 'Vlocka.JPG';
 const FOTKA_HIAWATHA = 'Hiawatha.jpg';
 const FOTKA_JIZNI_KRIZ = 'Jizni_Kriz.jpg';
-const FOTKA_SEVERKA = 'Severka.JPG';
+const FOTKA_SEVERKA = 'Severka.jpg';
 
 // cesty
 define('CESTA_ADRESAR_OBRAZKU', getcwd() . ODDELOVAC_ADRESARU . ADRESAR_OBRAZKY);
