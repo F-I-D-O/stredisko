@@ -1,0 +1,6 @@
+
+halo
+
+<?php
+
+phpinfo();

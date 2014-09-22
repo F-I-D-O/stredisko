@@ -1,8 +1,8 @@
 
 $(document).ready(function(){
 
-var rootUrl = '';
-//var rootUrl = '/stredisko';
+//var rootUrl = '';
+var rootUrl = '/stredisko';
 
 
 

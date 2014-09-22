@@ -1,5 +1,6 @@
 
 body {
+	margin: 0px;
     background: #b2b2b2;
 }
 
@@ -30,9 +31,14 @@ footer {
 }
 
 #hlavni {
-    /*width: 1000px;*/
+    width: 125vh;
+	height: 84vh;
+	max-width: 100vw;
+	position: relative;
     margin: auto;
+	margin-top: 7.5vh;
     background: #c9e19e;
+	
 }
 
 #nadpis {
@@ -73,6 +79,114 @@ footer {
 
 #menu button{
     float: left;
+}
+
+#menu a {
+	display: block;
+	width: 23.5vh;
+	height: 27.5vh;
+	position: absolute;
+}
+
+#menu a.odkaz_dalsi {
+	width: 47vh;
+	height: 55vh;
+}
+
+#menu a.odkaz_stredisko {
+	width: 35.25vh;
+	height: 41.25vh;
+	top: 2vh;
+	left: 2vh;
+}
+
+#menu a.odkaz_dalsi {
+	bottom: 2vh;
+	right: 2vh;	
+}
+
+#menu a.odkaz_severka, #menu a.odkaz_jizni_kriz {
+	top: 12.25vh;
+}
+
+#menu a.odkaz_severka {
+	left: 39vh;
+}
+
+#menu a.odkaz_jizni_kriz {
+	left: 64vh;
+}
+
+#menu a.odkaz_vlocka, #menu a.odkaz_hiawatha {
+	top: 35vh;
+}
+
+#menu a.odkaz_vlocka {
+	left: 25vh;
+}
+
+#menu a.odkaz_hiawatha {
+	left: 77.5vh;
+}
+
+
+
+
+.sestiuhelnik-obal-vnejsi {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	
+	overflow: hidden;
+	visibility: hidden;
+	-webkit-transform: rotate(120deg);
+	-moz-transform: rotate(120deg);
+	-o-transform: rotate(120deg);
+	-ms-transform: rotate(120deg);
+	transform: rotate(120deg);
+	cursor: pointer;
+}
+
+.sestiuhelnik-obal-vnitrni {
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+
+	-webkit-transform: rotate(-60deg);
+	-moz-transform: rotate(-60deg);
+	-o-transform: rotate(-60deg);
+	-ms-transform: rotate(-60deg);
+	transform: rotate(-60deg);
+}
+
+.sestiuhelnik-obsah {
+/*	-webkit-box-shadow: inset 0 0 0 200px rgba(176, 218, 212, 0.48);
+	box-shadow: inset 0 0 0 200px rgba(176, 218, 212, 0.48);*/
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-position: 50%;
+
+	-webkit-background-size: 125%;
+	-moz-background-size: 125%;
+	background-size: 125%;
+	visibility: visible;
+
+	-webkit-transform: rotate(-60deg);
+	-moz-transform: rotate(-60deg);
+	-o-transform: rotate(-60deg);
+	-ms-transform: rotate(-60deg);
+	transform: rotate(-60deg);
+	
+	background-color: #006AEB;
+}
+
+.pokus {
+	width: 100%;
+	height: 100%;
+	font-size: 1.9vw;
+
 }
 
 

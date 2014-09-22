@@ -30,21 +30,71 @@
 
 <body>
     <div id="hlavni">
-		<div id="obal-hlavicka">
-			<header>
-				<div id="nadpis">
+		
+			
+				{*<div id="nadpis">
 					<h1>Středisko Stopa Plzeň</h1>
-				</div>
+				</div>*}
 				<div id="menu">
-					<button class="odkaz_stredisko">Domů</button>
-					<button class="odkaz_severka">{#nadpisSeverka#}</button>
-					<button class="odkaz_jizni_kriz">{#nadpisJizniKriz#}</button>
-					<button class="odkaz_vlocka">{#nadpisVlocka#}</button>
-					<button class="odkaz_hiawatha">{#nadpisHiawatha#}</button>
+					<a class="odkaz_stredisko">
+						<div class="sestiuhelnik-obal-vnejsi">
+							<div class="sestiuhelnik-obal-vnitrni">
+								<div class="sestiuhelnik-obsah">
+									<div class="pokus">Domů</div>
+								</div>
+							</div>
+						</div>
+					</a>
+					<a class="odkaz_severka">
+						<div class="sestiuhelnik-obal-vnejsi">
+							<div class="sestiuhelnik-obal-vnitrni">
+								<div class="sestiuhelnik-obsah">
+									{#nadpisSeverka#}
+								</div>
+							</div>
+						</div>
+					</a>
+					<a class="odkaz_jizni_kriz">
+						<div class="sestiuhelnik-obal-vnejsi">
+							<div class="sestiuhelnik-obal-vnitrni">
+								<div class="sestiuhelnik-obsah">
+									{#nadpisJizniKriz#}
+								</div>
+							</div>
+						</div>
+					</a>
+					<a class="odkaz_vlocka">
+						<div class="sestiuhelnik-obal-vnejsi">
+							<div class="sestiuhelnik-obal-vnitrni">
+								<div class="sestiuhelnik-obsah">
+									{#nadpisVlocka#}
+								</div>
+							</div>
+						</div>
+					</a>
+					<a class="odkaz_hiawatha">
+						<div class="sestiuhelnik-obal-vnejsi">
+							<div class="sestiuhelnik-obal-vnitrni">
+								<div class="sestiuhelnik-obsah">
+									{#nadpisHiawatha#}
+								</div>
+							</div>
+						</div>
+					</a>
+								
+					<a class="odkaz_dalsi">
+						<div class="sestiuhelnik-obal-vnejsi">
+							<div class="sestiuhelnik-obal-vnitrni">
+								<div class="sestiuhelnik-obsah">
+									{#nadpisHiawatha#}
+								</div>
+							</div>
+						</div>
+					</a>			
 				</div>
-			</header>
-		</div>
-		<div id="obal-hlavni_slider" class="slider-wrapper theme-default">
+			
+		
+		{*<div id="obal-hlavni_slider" class="slider-wrapper theme-default">
 			<div class="ribbon"></div>
 			<div class="nivoSlider 2">
 				<a class="odkaz_severka"><img src="{$smarty.const.ADRESA_FOTKA_SEVERKA}" title="{#nadpisSeverka#}"></a>
@@ -101,7 +151,7 @@
 			<footer>
 
 			</footer>
-		</div>
+		</div>*}
     </div>
 </body>
 </html>
