@@ -1,7 +1,10 @@
+* {
+    font-family: Arial;
+}
 
 body {
 	margin: 0px;
-    background: #b2b2b2;
+    /*background: #b2b2b2;*/
 }
 
 button {
@@ -17,7 +20,7 @@ header {
 
 footer {
     max-width: 1000px;
-    height: 80px;
+    height: 81px;
     margin: auto;
     background: #e19edf;
 }
@@ -31,13 +34,11 @@ footer {
 }
 
 #hlavni {
-    width: 125vh;
-	height: 84vh;
-	max-width: 100vw;
-	position: relative;
-    margin: auto;
-	margin-top: 7.5vh;
-    background: #c9e19e;
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+        
+    /*background: #c9e19e;*/
 	
 }
 
@@ -77,56 +78,72 @@ footer {
 
 /* menu */
 
+#menu {
+    width: 125vh;
+	height: 82vh;
+	max-width: 100vw;
+	position: relative;
+    margin: auto;
+	margin-top: 9vh;
+}
+
 #menu button{
     float: left;
 }
 
 #menu a {
 	display: block;
-	width: 23.5vh;
-	height: 27.5vh;
+	width: 24vh;
+	height: 27.84vh;
 	position: absolute;
+    text-align: center;
+    color: white;
+    line-height: 27.84vh;
+    font-size: 2.5vh;
 }
 
-#menu a.odkaz_dalsi {
-	width: 47vh;
-	height: 55vh;
+#menu a.odkaz_dalsi, #menu a.odkaz_stredisko {
+	width: 40vh;
+	height: 46.4vh;
+    line-height: 46.4vh;
 }
 
 #menu a.odkaz_stredisko {
-	width: 35.25vh;
-	height: 41.25vh;
+	width: 40vh;
+	height: 46.4vh;
 	top: 2vh;
 	left: 2vh;
+    font-size: 7vh;
 }
 
 #menu a.odkaz_dalsi {
 	bottom: 2vh;
 	right: 2vh;	
+    font-size: 5vh;
 }
 
 #menu a.odkaz_severka, #menu a.odkaz_jizni_kriz {
-	top: 12.25vh;
+	top: 15.5vh;
 }
 
 #menu a.odkaz_severka {
-	left: 39vh;
+	left: 44vh;
 }
 
 #menu a.odkaz_jizni_kriz {
-	left: 64vh;
+	left: 70vh;
 }
 
 #menu a.odkaz_vlocka, #menu a.odkaz_hiawatha {
-	top: 35vh;
+	top: 38.5vh;
 }
 
 #menu a.odkaz_vlocka {
-	left: 25vh;
+	left: 31vh;
 }
 
 #menu a.odkaz_hiawatha {
-	left: 77.5vh;
+	left: 57vh;
 }
 
 
@@ -180,13 +197,6 @@ footer {
 	transform: rotate(-60deg);
 	
 	background-color: #006AEB;
-}
-
-.pokus {
-	width: 100%;
-	height: 100%;
-	font-size: 1.9vw;
-
 }
 
 

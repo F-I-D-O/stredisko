@@ -20,7 +20,7 @@ const ADRESAR_JIZNI_KRIZ = 'Jizni_kriz';
 const ADRESAR_VLOCKA = 'Vlocka';
 const ADRESAR_HIAWATHA = 'Hiawatha';
 
-const HLAVNI_TRIDA_SMARTY = 'Smarty-3.1.16/libs/Smarty.class.php';
+const HLAVNI_TRIDA_SMARTY = 'Smarty-3.1.18/libs/Smarty.class.php';
 
 const SOUBOR_STYLU = 'hlavni.css';
 const SOUBOR_SKRIPTU = 'hlavni.js';
@@ -31,7 +31,7 @@ const ADRESA_JQUERY = '//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.
 /* Smarty */
 const ADRESAR_SMARTY = 'Smarty';
 const ADRESAR_SMARTY_SABLONY = 'Sablony';
-const ADRESAR_SMARTY_KOMPILACNI = 'Kompilacni Adresar';
+const ADRESAR_SMARTY_KOMPILACNI = 'Prelozene';
 const ADRESAR_SMARTY_NASTAVENI = 'Nastaveni';
 const ADRESAR_SMARTY_CACHE = 'Cache';
 

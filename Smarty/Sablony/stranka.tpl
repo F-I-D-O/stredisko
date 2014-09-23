@@ -30,68 +30,66 @@
 
 <body>
     <div id="hlavni">
-		
-			
-				{*<div id="nadpis">
-					<h1>Středisko Stopa Plzeň</h1>
-				</div>*}
-				<div id="menu">
-					<a class="odkaz_stredisko">
-						<div class="sestiuhelnik-obal-vnejsi">
-							<div class="sestiuhelnik-obal-vnitrni">
-								<div class="sestiuhelnik-obsah">
-									<div class="pokus">Domů</div>
-								</div>
-							</div>
-						</div>
-					</a>
-					<a class="odkaz_severka">
-						<div class="sestiuhelnik-obal-vnejsi">
-							<div class="sestiuhelnik-obal-vnitrni">
-								<div class="sestiuhelnik-obsah">
-									{#nadpisSeverka#}
-								</div>
-							</div>
-						</div>
-					</a>
-					<a class="odkaz_jizni_kriz">
-						<div class="sestiuhelnik-obal-vnejsi">
-							<div class="sestiuhelnik-obal-vnitrni">
-								<div class="sestiuhelnik-obsah">
-									{#nadpisJizniKriz#}
-								</div>
-							</div>
-						</div>
-					</a>
-					<a class="odkaz_vlocka">
-						<div class="sestiuhelnik-obal-vnejsi">
-							<div class="sestiuhelnik-obal-vnitrni">
-								<div class="sestiuhelnik-obsah">
-									{#nadpisVlocka#}
-								</div>
-							</div>
-						</div>
-					</a>
-					<a class="odkaz_hiawatha">
-						<div class="sestiuhelnik-obal-vnejsi">
-							<div class="sestiuhelnik-obal-vnitrni">
-								<div class="sestiuhelnik-obsah">
-									{#nadpisHiawatha#}
-								</div>
-							</div>
-						</div>
-					</a>
-								
-					<a class="odkaz_dalsi">
-						<div class="sestiuhelnik-obal-vnejsi">
-							<div class="sestiuhelnik-obal-vnitrni">
-								<div class="sestiuhelnik-obsah">
-									{#nadpisHiawatha#}
-								</div>
-							</div>
-						</div>
-					</a>			
-				</div>
+        {*<div id="nadpis">
+            <h1>Středisko Stopa Plzeň</h1>
+        </div>*}
+        <div id="menu">
+            <a class="odkaz_stredisko">
+                <div class="sestiuhelnik-obal-vnejsi">
+                    <div class="sestiuhelnik-obal-vnitrni">
+                        <div class="sestiuhelnik-obsah">
+                            Středisko
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a class="odkaz_severka">
+                <div class="sestiuhelnik-obal-vnejsi">
+                    <div class="sestiuhelnik-obal-vnitrni">
+                        <div class="sestiuhelnik-obsah">
+                            {#nadpisSeverka#}
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a class="odkaz_jizni_kriz">
+                <div class="sestiuhelnik-obal-vnejsi">
+                    <div class="sestiuhelnik-obal-vnitrni">
+                        <div class="sestiuhelnik-obsah">
+                            {#nadpisJizniKriz#}
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a class="odkaz_vlocka">
+                <div class="sestiuhelnik-obal-vnejsi">
+                    <div class="sestiuhelnik-obal-vnitrni">
+                        <div class="sestiuhelnik-obsah">
+                            {#nadpisVlocka#}
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a class="odkaz_hiawatha">
+                <div class="sestiuhelnik-obal-vnejsi">
+                    <div class="sestiuhelnik-obal-vnitrni">
+                        <div class="sestiuhelnik-obsah">
+                            {#nadpisHiawatha#}
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <a class="odkaz_dalsi">
+                <div class="sestiuhelnik-obal-vnejsi">
+                    <div class="sestiuhelnik-obal-vnitrni">
+                        <div class="sestiuhelnik-obsah">
+                            Akce střediska
+                        </div>
+                    </div>
+                </div>
+            </a>			
+        </div>
 			
 		
 		{*<div id="obal-hlavni_slider" class="slider-wrapper theme-default">
