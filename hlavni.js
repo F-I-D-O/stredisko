@@ -71,18 +71,23 @@ $.reject({
 
 
 var mapaStranek = new Object();
-mapaStranek[''] = new Stranka("", "2");
-mapaStranek['stredisko'] = new Stranka("", "2");
-mapaStranek['severka'] = new Stranka("severka", "23");
-mapaStranek['jiznikriz'] = new Stranka("jiznikriz", "27");
-mapaStranek['vlocka'] = new Stranka("vlocka", "28");
-mapaStranek['hiawatha'] = new Stranka("hiawatha", "29");
+mapaStranek[''] = new Stranka("", 0);
+mapaStranek['stredisko'] = new Stranka("", 2);
+mapaStranek['severka'] = new Stranka("severka", 23);
+mapaStranek['jiznikriz'] = new Stranka("jiznikriz", 27);
+mapaStranek['vlocka'] = new Stranka("vlocka", 28);
+mapaStranek['hiawatha'] = new Stranka("hiawatha", 29);
+
 
 mapaStranek.get = function(stranka) {
 	return mapaStranek[stranka];
-}
+};
 
 nahrajObsahStranky(mapaStranek.get($('meta[name=pocatecni_stranka]').attr("content")));
+
+$(window).on("popstate", function() {
+   nahrajObsahStranky(mapaStranek.get(strankaZUrl()));
+});
 
 $(".odkaz_stredisko").click(function(){
     nahrajStranku(mapaStranek.get('stredisko'));
@@ -104,6 +109,13 @@ $(".odkaz_hiawatha").click(function(){
 	nahrajStranku(mapaStranek.get('hiawatha'));
 });
 
+function strankaZUrl(){
+    var url = document.URL;
+    var urlParts = url.split('/');
+//    alert(urlParts[4]);
+    return urlParts[4];
+}
+
 function Stranka(adresa, id){
     this.adresa = adresa;
     this.id = id;
@@ -116,8 +128,22 @@ function nahrajStranku(stranka){
 }
 
 function nahrajObsahStranky(stranka){
-    nahrajObsahInfo(stranka);
-    nahrajSlider(stranka);
+    prepniTitulku(stranka);
+}
+
+function prepniTitulku(stranka){
+    if(stranka.id === 0){
+        $('#menu').addClass('titulka');
+        $('#menu').removeClass('podstrana');
+        $('#podstrana').hide();
+    }
+    else{
+        $('#menu').removeClass('titulka');
+        $('#menu').addClass('podstrana');
+        $('#podstrana').show();
+        nahrajObsahInfo(stranka);
+        nahrajSlider(stranka);
+    }
 }
 
 function nahrajObsahInfo(stranka){

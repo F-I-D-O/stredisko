@@ -76,78 +76,7 @@ footer {
     display: none;
 }
 
-/* menu */
-
-#menu {
-    width: 125vh;
-	height: 82vh;
-	max-width: 100vw;
-	position: relative;
-    margin: auto;
-	margin-top: 9vh;
-}
-
-#menu button{
-    float: left;
-}
-
-#menu a {
-	display: block;
-	width: 24vh;
-	height: 27.84vh;
-	position: absolute;
-    text-align: center;
-    color: white;
-    line-height: 27.84vh;
-    font-size: 2.5vh;
-}
-
-#menu a.odkaz_dalsi, #menu a.odkaz_stredisko {
-	width: 40vh;
-	height: 46.4vh;
-    line-height: 46.4vh;
-}
-
-#menu a.odkaz_stredisko {
-	width: 40vh;
-	height: 46.4vh;
-	top: 2vh;
-	left: 2vh;
-    font-size: 7vh;
-}
-
-#menu a.odkaz_dalsi {
-	bottom: 2vh;
-	right: 2vh;	
-    font-size: 5vh;
-}
-
-#menu a.odkaz_severka, #menu a.odkaz_jizni_kriz {
-	top: 15.5vh;
-}
-
-#menu a.odkaz_severka {
-	left: 44vh;
-}
-
-#menu a.odkaz_jizni_kriz {
-	left: 70vh;
-}
-
-#menu a.odkaz_vlocka, #menu a.odkaz_hiawatha {
-	top: 38.5vh;
-}
-
-#menu a.odkaz_vlocka {
-	left: 31vh;
-}
-
-#menu a.odkaz_hiawatha {
-	left: 57vh;
-}
-
-
-
+/* menu společné */
 
 .sestiuhelnik-obal-vnejsi {
 	position: absolute;
@@ -198,6 +127,143 @@ footer {
 	
 	background-color: #006AEB;
 }
+
+/* menu titulka */
+
+#menu.titulka {
+    width: 125vh;
+	height: 82vh;
+	max-width: 100vw;
+	position: relative;
+    margin: auto;
+	margin-top: 9vh;
+}
+
+#menu.titulka a {
+	display: block;
+	width: 24vh;
+	height: 27.84vh;
+	position: absolute;
+    text-align: center;
+    color: white;
+    line-height: 27.84vh;
+    font-size: 2.5vh;
+}
+
+#menu.titulka a.odkaz_dalsi, #menu.titulka a.odkaz_stredisko {
+	width: 40vh;
+	height: 46.4vh;
+    line-height: 46.4vh;
+}
+
+#menu.titulka a.odkaz_stredisko {
+	width: 40vh;
+	height: 46.4vh;
+	top: 2vh;
+	left: 2vh;
+    font-size: 7vh;
+}
+
+#menu.titulka a.odkaz_dalsi {
+	bottom: 2vh;
+	right: 2vh;	
+    font-size: 5vh;
+}
+
+#menu.titulka a.odkaz_severka, #menu.titulka a.odkaz_jizni_kriz {
+	top: 15.5vh;
+}
+
+#menu.titulka a.odkaz_severka {
+	left: 44vh;
+}
+
+#menu.titulka a.odkaz_jizni_kriz {
+	left: 70vh;
+}
+
+#menu.titulka a.odkaz_vlocka, #menu.titulka a.odkaz_hiawatha {
+	top: 38.5vh;
+}
+
+#menu.titulka a.odkaz_vlocka {
+	left: 31vh;
+}
+
+#menu.titulka a.odkaz_hiawatha {
+	left: 57vh;
+}
+
+/* menu podstrana */
+
+#menu.podstrana {
+    float: right;
+	max-width: 30vw;
+}
+
+#menu.podstrana a {
+	display: block;
+	width: 216px;
+	height: 200px;
+    text-align: center;
+    color: white;
+    line-height: 200px;
+    font-size: 25px;
+}
+
+
+
+
+/* design podstrany */
+
+#podstrana {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.design-rectangle {
+    background-color: #1A7E1E;
+    position: absolute;
+}
+
+#first-design-rrectangle {
+    width: 50vw;
+    height: 25vw;
+    top: -5vw;
+    left: -20vw;
+    -webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+
+#second-design-rrectangle {
+    width: 150vw;
+    height: 50vw;
+    top: -42vw;
+    left: -20vw;
+    -webkit-transform: rotate(15deg);
+	-moz-transform: rotate(15deg);
+	-o-transform: rotate(15deg);
+	-ms-transform: rotate(15deg);
+	transform: rotate(15deg);
+}
+
+#third-design-rrectangle {
+    width: 73vw;
+    height: 28vw;
+    top: -5vw;
+    left: 66vw;
+    -webkit-transform: rotate(75deg);
+	-moz-transform: rotate(75deg);
+	-o-transform: rotate(75deg);
+	-ms-transform: rotate(75deg);
+	transform: rotate(75deg);
+}
+
 
 
 /* slider */

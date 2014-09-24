@@ -33,7 +33,7 @@
         {*<div id="nadpis">
             <h1>Středisko Stopa Plzeň</h1>
         </div>*}
-        <div id="menu">
+        <div id="menu" class="titulka">
             <a class="odkaz_stredisko">
                 <div class="sestiuhelnik-obal-vnejsi">
                     <div class="sestiuhelnik-obal-vnitrni">
@@ -91,7 +91,11 @@
             </a>			
         </div>
 			
-		
+        <div id="podstrana">
+            <div id="first-design-rrectangle" class="design-rectangle"></div>
+            <div id="second-design-rrectangle" class="design-rectangle"></div>
+            <div id="third-design-rrectangle" class="design-rectangle"></div>
+        </div>
 		{*<div id="obal-hlavni_slider" class="slider-wrapper theme-default">
 			<div class="ribbon"></div>
 			<div class="nivoSlider 2">
