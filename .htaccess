@@ -10,4 +10,4 @@ RewriteRule test/(.*)$ /test2/$1
 
 RewriteRule checker checker/checker.php
 
-RewriteRule    ^([^\.t]+)$    index.php?stranka=$1
+RewriteRule    ^([^\.]+)$    index.php?stranka=$1

@@ -34,7 +34,7 @@
             <h1>Středisko Stopa Plzeň</h1>
         </div>*}
         <div id="menu" class="titulka">
-            <a class="odkaz_stredisko">
+            <a id='menu-2' class="odkaz_stredisko">
                 <div class="sestiuhelnik-obal-vnejsi">
                     <div class="sestiuhelnik-obal-vnitrni">
                         <div class="sestiuhelnik-obsah">
@@ -43,7 +43,7 @@
                     </div>
                 </div>
             </a>
-            <a class="odkaz_severka">
+            <a id='menu-23' class="odkaz_severka">
                 <div class="sestiuhelnik-obal-vnejsi">
                     <div class="sestiuhelnik-obal-vnitrni">
                         <div class="sestiuhelnik-obsah">
@@ -52,7 +52,7 @@
                     </div>
                 </div>
             </a>
-            <a class="odkaz_jizni_kriz">
+            <a id='menu-27' class="odkaz_jizni_kriz">
                 <div class="sestiuhelnik-obal-vnejsi">
                     <div class="sestiuhelnik-obal-vnitrni">
                         <div class="sestiuhelnik-obsah">
@@ -61,7 +61,7 @@
                     </div>
                 </div>
             </a>
-            <a class="odkaz_vlocka">
+            <a id='menu-28' class="odkaz_vlocka">
                 <div class="sestiuhelnik-obal-vnejsi">
                     <div class="sestiuhelnik-obal-vnitrni">
                         <div class="sestiuhelnik-obsah">
@@ -70,7 +70,7 @@
                     </div>
                 </div>
             </a>
-            <a class="odkaz_hiawatha">
+            <a id='menu-29' class="odkaz_hiawatha">
                 <div class="sestiuhelnik-obal-vnejsi">
                     <div class="sestiuhelnik-obal-vnitrni">
                         <div class="sestiuhelnik-obsah">
@@ -80,7 +80,7 @@
                 </div>
             </a>
 
-            <a class="odkaz_dalsi">
+            <a id='menu-20' class="odkaz_dalsi">
                 <div class="sestiuhelnik-obal-vnejsi">
                     <div class="sestiuhelnik-obal-vnitrni">
                         <div class="sestiuhelnik-obsah">
@@ -95,6 +95,46 @@
             <div id="first-design-rrectangle" class="design-rectangle"></div>
             <div id="second-design-rrectangle" class="design-rectangle"></div>
             <div id="third-design-rrectangle" class="design-rectangle"></div>
+			<a class='domu'>
+                <div class="sestiuhelnik-obal-vnejsi">
+                    <div class="sestiuhelnik-obal-vnitrni">
+                        <div class="sestiuhelnik-obsah">
+                            <div class="text">Domů</div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+			<div id="slider-obal">
+                <div class="sestiuhelnik-obal-vnejsi">
+                    <div class="sestiuhelnik-obal-vnitrni">
+                        <div class="sestiuhelnik-obsah">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+			<div id="clanek">
+				<div id="2" class="info">
+					<h1>{#nadpisStredisko#}</h1>
+					{#textStredisko#}
+				</div>
+				<div id="23" class="info">
+					<h1>{#nadpisSeverka#}</h1>
+					{#textSeverka#}
+				</div>
+				<div id="27" class="info">
+					<h1>{#nadpisJizniKriz#}</h1>
+					{#textJizniKriz#}
+				</div>
+				<div id="28" class="info">
+					<h1>{#nadpisVlocka#}</h1>
+					{#textVlocka#}
+				</div>
+				<div id="29" class="info">
+					<h1>{#nadpisHiawatha#}</h1>
+					{#textHiawatha#}
+				</div>
+			</div>
         </div>
 		{*<div id="obal-hlavni_slider" class="slider-wrapper theme-default">
 			<div class="ribbon"></div>
@@ -125,30 +165,7 @@
 				{/foreach}
 			</div>
 		</div>
-		<div id="obal-clanek">
-			<div id="clanek">
-				<div id="2" class="info">
-					<h1>{#nadpisStredisko#}</h1>
-					{#textStredisko#}
-				</div>
-				<div id="23" class="info">
-					<h1>{#nadpisSeverka#}</h1>
-					{#textSeverka#}
-				</div>
-				<div id="27" class="info">
-					<h1>{#nadpisJizniKriz#}</h1>
-					{#textJizniKriz#}
-				</div>
-				<div id="28" class="info">
-					<h1>{#nadpisVlocka#}</h1>
-					{#textVlocka#}
-				</div>
-				<div id="29" class="info">
-					<h1>{#nadpisHiawatha#}</h1>
-					{#textHiawatha#}
-				</div>
-			</div>
-		</div>
+		
 		<div id="obal-patka">
 			<footer>
 

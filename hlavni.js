@@ -77,6 +77,7 @@ mapaStranek['severka'] = new Stranka("severka", 23);
 mapaStranek['jiznikriz'] = new Stranka("jiznikriz", 27);
 mapaStranek['vlocka'] = new Stranka("vlocka", 28);
 mapaStranek['hiawatha'] = new Stranka("hiawatha", 29);
+mapaStranek['projekty'] = new Stranka("projekty", 20);
 
 
 mapaStranek.get = function(stranka) {
@@ -109,6 +110,10 @@ $(".odkaz_hiawatha").click(function(){
 	nahrajStranku(mapaStranek.get('hiawatha'));
 });
 
+$(".domu").click(function(){
+	nahrajStranku(mapaStranek.get(''));
+});
+
 function strankaZUrl(){
     var url = document.URL;
     var urlParts = url.split('/');
@@ -136,12 +141,14 @@ function prepniTitulku(stranka){
         $('#menu').addClass('titulka');
         $('#menu').removeClass('podstrana');
         $('#podstrana').hide();
+		$('#menu > a').show();
     }
     else{
         $('#menu').removeClass('titulka');
         $('#menu').addClass('podstrana');
         $('#podstrana').show();
         nahrajObsahInfo(stranka);
+		nahrajMenu(stranka);
         nahrajSlider(stranka);
     }
 }
@@ -149,6 +156,11 @@ function prepniTitulku(stranka){
 function nahrajObsahInfo(stranka){
 	$("#clanek").children().css("display", "none");
 	$("#" + stranka.id).css("display", "block");
+}
+
+function nahrajMenu(stranka){
+	$('#menu > a').show();
+	$('#menu > a#menu-'  + stranka.id).hide();
 }
 
 function nahrajSlider(stranka){

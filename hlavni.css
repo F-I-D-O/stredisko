@@ -25,13 +25,7 @@ footer {
     background: #e19edf;
 }
 
-#clanek {
-    max-width: 1000px;
-    min-height: 250px;
-    margin: auto;
-    overflow: auto;
-    background: #9ee1dd;
-}
+
 
 #hlavni {
     width: 100%;
@@ -77,6 +71,12 @@ footer {
 }
 
 /* menu společné */
+
+#menu.titulka a {
+	display: block;
+    text-align: center;
+    color: white;
+}
 
 .sestiuhelnik-obal-vnejsi {
 	position: absolute;
@@ -197,18 +197,23 @@ footer {
 /* menu podstrana */
 
 #menu.podstrana {
-    float: right;
-	max-width: 30vw;
+    max-width: 30vw;
+    position: fixed;
+    right: 0.83vh;
+    top: 0.83vh;
 }
 
 #menu.podstrana a {
-	display: block;
-	width: 216px;
-	height: 200px;
+	color: white;
+    display: block;
+    font-size: 2vh;
+    height: 19vh;
+    line-height: 19vh;
+    margin-bottom: 0.83vh;
+    position: relative;
     text-align: center;
-    color: white;
-    line-height: 200px;
-    font-size: 25px;
+    width: 22vh;
+    z-index: 1;
 }
 
 
@@ -219,7 +224,7 @@ footer {
 #podstrana {
     width: 100%;
     min-height: 100vh;
-    position: relative;
+    position: absolute;
     overflow: hidden;
 }
 
@@ -231,8 +236,8 @@ footer {
 #first-design-rrectangle {
     width: 50vw;
     height: 25vw;
-    top: -5vw;
-    left: -20vw;
+    top: -17vw;
+    left: -17vw;
     -webkit-transform: rotate(-45deg);
 	-moz-transform: rotate(-45deg);
 	-o-transform: rotate(-45deg);
@@ -243,7 +248,7 @@ footer {
 #second-design-rrectangle {
     width: 150vw;
     height: 50vw;
-    top: -42vw;
+    top: -40vw;
     left: -20vw;
     -webkit-transform: rotate(15deg);
 	-moz-transform: rotate(15deg);
@@ -253,10 +258,10 @@ footer {
 }
 
 #third-design-rrectangle {
-    width: 73vw;
-    height: 28vw;
+    width: 200vw;
+    height: 140vw;
     top: -5vw;
-    left: 66vw;
+    left: 50vw;
     -webkit-transform: rotate(75deg);
 	-moz-transform: rotate(75deg);
 	-o-transform: rotate(75deg);
@@ -264,6 +269,39 @@ footer {
 	transform: rotate(75deg);
 }
 
+.domu {
+	height: 15vw;
+    left: -5vw;
+    position: absolute;
+    top: -4vw;
+    width: 18vw;
+	 -webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+	
+}
+
+.domu .sestiuhelnik-obsah .text {
+	font-size: 4vw;
+    padding-top: 8vw;
+    text-align: center;
+}
+
+#slider-obal {
+	height: 30vw;
+    left: 45vw;
+    position: fixed;
+    top: 1vw;
+    width: 34.8vw;
+}
+
+#clanek {
+	margin: 13vw 0 0 10vw;
+    max-width: 35vw;
+    min-height: 250px;
+}
 
 
 /* slider */
