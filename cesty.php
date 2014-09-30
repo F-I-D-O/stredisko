@@ -7,8 +7,8 @@ const JMENO_JIZNI_KRIZ = 'JizniKriz';
 const JMENO_VLOCKA = 'Vlocka';
 const JMENO_HIAWATHA = 'Hiawatha';
 
-const KOREN_WEBU = 'stredisko';
-//const KOREN_WEBU = '';
+//const KOREN_WEBU = 'stredisko';
+const KOREN_WEBU = '';
 
 const ODDELOVAC_ADRESARU = '/';
 

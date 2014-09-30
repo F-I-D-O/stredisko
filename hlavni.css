@@ -197,10 +197,12 @@ footer {
 /* menu podstrana */
 
 #menu.podstrana {
+	width: 22vh;
     max-width: 30vw;
     position: fixed;
     right: 0.83vh;
     top: 0.83vh;
+	z-index: 1;
 }
 
 #menu.podstrana a {
@@ -213,7 +215,6 @@ footer {
     position: relative;
     text-align: center;
     width: 22vh;
-    z-index: 1;
 }
 
 
@@ -289,20 +290,44 @@ footer {
     text-align: center;
 }
 
+#odkaz-ven {
+    height: 12.9vw;
+    left: 63vw;
+    position: fixed;
+    top: 35vw;
+    width: 15vw;
+}
+
+#odkaz-ven .sestiuhelnik-obsah .text {
+	color: white;
+    font-size: 2vw;
+    line-height: 12.8vw;
+    text-align: center;
+}
+
 #slider-obal {
-	height: 30vw;
+    height: 32.8vw;
     left: 45vw;
     position: fixed;
     top: 1vw;
-    width: 34.8vw;
+    width: 38vw;
 }
 
 #clanek {
 	margin: 13vw 0 0 10vw;
-    max-width: 35vw;
+    max-width: 34vw;
     min-height: 250px;
+    text-align: justify;
 }
 
 
 /* slider */
+
+.hlavniSlider {
+	/*display: none;*/
+}
+
+#hlavni-slider-obal {
+	padding-top: 2vw;
+}
 
