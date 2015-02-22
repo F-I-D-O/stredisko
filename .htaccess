@@ -4,10 +4,12 @@ RewriteEngine on
 
 #RewriteRule test test.php
 #
-RewriteRule test/(.*)$ /test2/$1
+RewriteRule sec/code/ sec/code.php
+
+RedirectMatch ^/sec$ sec/index.php
 
 #RewriteRule test bhg.php
 
 RewriteRule checker checker/checker.php
 
-RewriteRule    ^([^\.]+)$    index.php?stranka=$1
+RewriteRule    ^([^\./]+)$    index.php?stranka=$1

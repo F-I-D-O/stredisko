@@ -153,15 +153,31 @@ footer {
 #menu.titulka a.odkaz_dalsi, #menu.titulka a.odkaz_stredisko {
 	width: 40vh;
 	height: 46.4vh;
-    line-height: 46.4vh;
+    /*line-height: 46.4vh;*/
+	line-height: 6vh;
 }
+
+#menu.titulka a.odkaz_stredisko p, #menu.titulka a.odkaz_dalsi p {
+	margin: auto;
+	
+	width: 20vh;
+}
+
+#menu.titulka a.odkaz_stredisko p {
+	margin-top: 14vh;
+}
+
+#menu.titulka a.odkaz_dalsi p {
+	margin-top: 16vh;
+}
+
 
 #menu.titulka a.odkaz_stredisko {
 	width: 40vh;
 	height: 46.4vh;
 	top: 2vh;
 	left: 2vh;
-    font-size: 7vh;
+    font-size: 5vh;
 }
 
 #menu.titulka a.odkaz_dalsi {
@@ -208,15 +224,18 @@ footer {
 #menu.podstrana a {
 	color: white;
     display: block;
-    font-size: 2vh;
-    height: 19vh;
-    line-height: 19vh;
+    font-size: 1.8vh;
+    height: 15.7vh;
+    line-height: 15.7vh;
     margin-bottom: 0.83vh;
     position: relative;
     text-align: center;
-    width: 22vh;
+    width: 18.2vh;
 }
 
+#menu.podstrana a p {
+	margin: 0px;
+}
 
 
 
@@ -271,11 +290,11 @@ footer {
 }
 
 .domu {
-	height: 15vw;
-    left: -5vw;
+	height: 10vw;
+    left: -4vw;
     position: absolute;
-    top: -4vw;
-    width: 18vw;
+    top: -3vw;
+    width: 12vw;
 	 -webkit-transform: rotate(-45deg);
 	-moz-transform: rotate(-45deg);
 	-o-transform: rotate(-45deg);
@@ -285,24 +304,14 @@ footer {
 }
 
 .domu .sestiuhelnik-obsah .text {
-	font-size: 4vw;
-    padding-top: 8vw;
-    text-align: center;
-}
-
-#odkaz-ven {
-    height: 12.9vw;
-    left: 63vw;
-    position: fixed;
-    top: 35vw;
-    width: 15vw;
-}
-
-#odkaz-ven .sestiuhelnik-obsah .text {
 	color: white;
     font-size: 2vw;
-    line-height: 12.8vw;
+    padding-top: 6vw;
     text-align: center;
+}
+	
+#odkaz-ven {
+	display: none;
 }
 
 #slider-obal {

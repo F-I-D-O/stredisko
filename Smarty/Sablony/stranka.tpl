@@ -32,12 +32,12 @@
 </head>
 
 <body 
-	data-2='{literal}{{/literal}"barva": "{#barvaStredisko#}"{literal}}{/literal}'
-	data-23='{literal}{{/literal}"barva": "{#barvaSeverka#}"{literal}}{/literal}'
-	data-27='{literal}{{/literal}"barva": "{#barvaJizniKriz#}"{literal}}{/literal}'
-	data-28='{literal}{{/literal}"barva": "{#barvaVlocka#}"{literal}}{/literal}'
-	data-29='{literal}{{/literal}"barva": "{#barvaHiawatha#}"{literal}}{/literal}'
-	data-20='{literal}{{/literal}"barva": "{#barvaOstatni#}"{literal}}{/literal}'>
+	data-2='{literal}{{/literal}"barva": "{#barvaStredisko#}", "barvaSvetlejsi": "{#barvaStrediskoSvetlejsi#}"{literal}}{/literal}'
+	data-23='{literal}{{/literal}"barva": "{#barvaSeverka#}", "barvaSvetlejsi": "{#barvaSeverkaSvetlejsi#}"{literal}}{/literal}'
+	data-27='{literal}{{/literal}"barva": "{#barvaJizniKriz#}", "barvaSvetlejsi": "{#barvaJizniKrizSvetlejsi#}"{literal}}{/literal}'
+	data-28='{literal}{{/literal}"barva": "{#barvaVlocka#}", "barvaSvetlejsi": "{#barvaVlockaSvetlejsi#}"{literal}}{/literal}'
+	data-29='{literal}{{/literal}"barva": "{#barvaHiawatha#}", "barvaSvetlejsi": "{#barvaHiawathaSvetlejsi#}"{literal}}{/literal}'
+	data-20='{literal}{{/literal}"barva": "{#barvaOstatni#}", "barvaSvetlejsi": "{#barvaOstatniSvetlejsi#}"{literal}}{/literal}'>
 
     <div id="hlavni">
         {*<div id="nadpis">
@@ -48,7 +48,7 @@
                 <div class="sestiuhelnik-obal-vnejsi">
                     <div class="sestiuhelnik-obal-vnitrni">
                         <div class="sestiuhelnik-obsah" style="background-color: {#barvaStredisko#}">
-                            Středisko
+							<p>{#nadpisStredisko#}</p>                           
                         </div>
                     </div>
                 </div>
@@ -94,7 +94,22 @@
                 <div class="sestiuhelnik-obal-vnejsi">
                     <div class="sestiuhelnik-obal-vnitrni">
                         <div class="sestiuhelnik-obsah" style="background-color: {#barvaOstatni#}">
-                            Akce střediska
+                            <p>{#nadpisDalsi#}</p>
+                        </div>
+                    </div>
+                </div>
+            </a>	
+						
+			<a	id='odkaz-ven'
+				target="_blank"
+				data-23='{literal}{{/literal}"link": "{#odkazVenSeverka#}", "text": "{#textOdkazVenSeverka#}"{literal}}{/literal}'
+				data-27='{literal}{{/literal}"link": "{#odkazVenJizniKriz#}", "text": "{#textOdkazVenJizniKriz#}"{literal}}{/literal}'
+				data-28='{literal}{{/literal}"link": "{#odkazVenVlocka#}", "text": "{#textOdkazVenVlocka#}"{literal}}{/literal}'
+				data-29='{literal}{{/literal}"link": "{#odkazVenHiawatha#}", "text": "{#textOdkazVenHiawatha#}"{literal}}{/literal}'>
+                <div class="sestiuhelnik-obal-vnejsi">
+                    <div class="sestiuhelnik-obal-vnitrni">
+                        <div class="sestiuhelnik-obsah">
+                            <div class="text"></div>
                         </div>
                     </div>
                 </div>
@@ -151,20 +166,7 @@
                 </div>
             </div>
 			
-			<a	id='odkaz-ven'
-				target="_blank"
-				data-23='{literal}{{/literal}"link": "{#odkazVenSeverka#}", "text": "{#textOdkazVenSeverka#}"{literal}}{/literal}'
-				data-27='{literal}{{/literal}"link": "{#odkazVenJizniKriz#}", "text": "{#textOdkazVenJizniKriz#}"{literal}}{/literal}'
-				data-28='{literal}{{/literal}"link": "{#odkazVenVlocka#}", "text": "{#textOdkazVenVlocka#}"{literal}}{/literal}'
-				data-29='{literal}{{/literal}"link": "{#odkazVenHiawatha#}", "text": "{#textOdkazVenHiawatha#}"{literal}}{/literal}'>
-                <div class="sestiuhelnik-obal-vnejsi">
-                    <div class="sestiuhelnik-obal-vnitrni">
-                        <div class="sestiuhelnik-obsah">
-                            <div class="text"></div>
-                        </div>
-                    </div>
-                </div>
-            </a>					
+								
 								
 			<div id="clanek">
 				<div id="2" class="info" style="color: {#barvaStredisko#}">
