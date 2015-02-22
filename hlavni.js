@@ -159,7 +159,7 @@ function prepniTitulku(stranka){
 }
 
 function nahrajObsahInfo(stranka){
-	$("#clanek").children().css("display", "none");
+	$("#clanek").children('.info').css("display", "none");
 	$("#" + stranka.id).css("display", "block");
 }
 

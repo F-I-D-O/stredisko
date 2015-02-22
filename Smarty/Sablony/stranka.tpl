@@ -130,45 +130,38 @@
                 </div>
             </a>
 			<div id="slider-obal">
-                <div class="sestiuhelnik-obal-vnejsi">
-                    <div class="sestiuhelnik-obal-vnitrni">
-                        <div class="sestiuhelnik-obsah">
-                            <div id="hlavni-slider-obal">
-								<ul class="hlavniSlider 2">
-									<li><a class="odkaz_severka"><img src="{$smarty.const.ADRESA_FOTKA_SEVERKA}" title="{#nadpisSeverka#}"></a></li>
-									<li><a class="odkaz_jizni_kriz"><img src="{$smarty.const.ADRESA_FOTKA_JIZNI_KRIZ}" title="{#nadpisJizniKriz#}"></a></li>
-									<li><a class="odkaz_vlocka"><img src="{$smarty.const.ADRESA_FOTKA_VLOCKA}" title="{#nadpisVlocka#}"></a></li>
-									<li><a class="odkaz_hiawatha"><img src="{$smarty.const.ADRESA_FOTKA_HIAWATHA}" title="{#nadpisHiawatha#}"></a></li>
-								</ul>
-								<ul class="hlavniSlider 23">
-									{foreach $obrazkySeverka as $index => $adresa}
-										<li><a href="#slide{$index}"><img title="{#nadpisSeverka#}" data-src="{$adresa}"></a></li>
-									{/foreach}
-								</ul>
-								<ul class="hlavniSlider 27">
-									{foreach $obrazkyJizniKriz as $index => $adresa}
-										<li><a href="#slide{$index}"><img title="{#nadpisJizniKriz#}" data-src="{$adresa}"></a></li>
-									{/foreach}
-								</ul>
-								<ul class="hlavniSlider 28">
-									{foreach $obrazkyVlocka as $index => $adresa}
-										<li><a href="#slide{$index}"><img title="{#nadpisVlocka#}" data-src="{$adresa}"></a></li>
-									{/foreach}
-								</ul>
-								<ul class="hlavniSlider 29">
-									{foreach $obrazkyHiawatha as $index => $adresa}
-										<li><a href="#slide{$index}"><img title="{#nadpisHiawatha#}" data-src="{$adresa}"></a></li>
-									{/foreach}
-								</ul>
-							</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-			
-								
+				<div id="hlavni-slider-obal">
+					<ul class="hlavniSlider 2">
+						<li><a class="odkaz_severka"><img src="{$smarty.const.ADRESA_FOTKA_SEVERKA}" title="{#nadpisSeverka#}"></a></li>
+						<li><a class="odkaz_jizni_kriz"><img src="{$smarty.const.ADRESA_FOTKA_JIZNI_KRIZ}" title="{#nadpisJizniKriz#}"></a></li>
+						<li><a class="odkaz_vlocka"><img src="{$smarty.const.ADRESA_FOTKA_VLOCKA}" title="{#nadpisVlocka#}"></a></li>
+						<li><a class="odkaz_hiawatha"><img src="{$smarty.const.ADRESA_FOTKA_HIAWATHA}" title="{#nadpisHiawatha#}"></a></li>
+					</ul>
+					<ul class="hlavniSlider 23">
+						{foreach $obrazkySeverka as $index => $adresa}
+							<li><a href="#slide{$index}"><img title="{#nadpisSeverka#}" data-src="{$adresa}"></a></li>
+						{/foreach}
+					</ul>
+					<ul class="hlavniSlider 27">
+						{foreach $obrazkyJizniKriz as $index => $adresa}
+							<li><a href="#slide{$index}"><img title="{#nadpisJizniKriz#}" data-src="{$adresa}"></a></li>
+						{/foreach}
+					</ul>
+					<ul class="hlavniSlider 28">
+						{foreach $obrazkyVlocka as $index => $adresa}
+							<li><a href="#slide{$index}"><img title="{#nadpisVlocka#}" data-src="{$adresa}"></a></li>
+						{/foreach}
+					</ul>
+					<ul class="hlavniSlider 29">
+						{foreach $obrazkyHiawatha as $index => $adresa}
+							<li><a href="#slide{$index}"><img title="{#nadpisHiawatha#}" data-src="{$adresa}"></a></li>
+						{/foreach}
+					</ul>
+				</div>
+            </div>								
 								
 			<div id="clanek">
+				<div id="clanek-pozadi-slider"></div>
 				<div id="2" class="info" style="color: {#barvaStredisko#}">
 					<h1>{#nadpisStredisko#}</h1>
 					{#textStredisko#}
