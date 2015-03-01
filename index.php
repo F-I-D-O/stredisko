@@ -16,14 +16,17 @@ $smarty = new MySmarty();
 //$smarty->setConfigDir(CESTA_SMARTY_NASTAVENI);
 //$smarty->setCacheDir(CESTA_SMARTY_CACHE);
 
-pripravvObrazky(CESTA_ADRESAR_OBRAZKU_SEVERKA, JMENO_SEVERKA);
-pripravvObrazky(CESTA_ADRESAR_OBRAZKU_JIZNI_KRIZ, JMENO_JIZNI_KRIZ);
-pripravvObrazky(CESTA_ADRESAR_OBRAZKU_VLOCKA, JMENO_VLOCKA);
-pripravvObrazky(CESTA_ADRESAR_OBRAZKU_HIAWATHA, JMENO_HIAWATHA);
+pripravObrazky(CESTA_ADRESAR_OBRAZKU_SEVERKA, JMENO_SEVERKA);
+pripravObrazky(CESTA_ADRESAR_OBRAZKU_JIZNI_KRIZ, JMENO_JIZNI_KRIZ);
+pripravObrazky(CESTA_ADRESAR_OBRAZKU_VLOCKA, JMENO_VLOCKA);
+pripravObrazky(CESTA_ADRESAR_OBRAZKU_HIAWATHA, JMENO_HIAWATHA);
 
 $smarty->display('stranka.tpl');
 
-function pripravvObrazky($cesta, $jmenoPromenne){
+
+
+
+function pripravObrazky($cesta, $jmenoPromenne){
 	$obrazky = glob($cesta . '/*.{jpg,jpeg,png,JPG,JPEG,PNG}', GLOB_BRACE);
 	foreach ($obrazky as &$adresa){
 		$adresa = cestaNaAdresu($adresa);

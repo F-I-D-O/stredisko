@@ -22,7 +22,7 @@
 	<script src="nivo-slider/jquery.nivo.slider.pack.js" type="text/javascript"></script>
 	
 	<script src="Knihovny/slippry-1.2.1/dist/slippry.min.js"></script>
-	<link rel="stylesheet" href="Knihovny/slippry-1.2.1/dist/slippry.css" />
+	<link rel="stylesheet" href="Knihovny/slippry-1.2.7/dist/slippry.css" />
 
     {* Hlavní skript *}
     <script src="{$smarty.const.ADRESA_GLOBALNI_SKRIPT}"></script>
@@ -130,60 +130,59 @@
                 </div>
             </a>
 			<div id="slider-obal">
-				<div id="hlavni-slider-obal">
-					<ul class="hlavniSlider 2">
-						<li><a class="odkaz_severka"><img src="{$smarty.const.ADRESA_FOTKA_SEVERKA}" title="{#nadpisSeverka#}"></a></li>
-						<li><a class="odkaz_jizni_kriz"><img src="{$smarty.const.ADRESA_FOTKA_JIZNI_KRIZ}" title="{#nadpisJizniKriz#}"></a></li>
-						<li><a class="odkaz_vlocka"><img src="{$smarty.const.ADRESA_FOTKA_VLOCKA}" title="{#nadpisVlocka#}"></a></li>
-						<li><a class="odkaz_hiawatha"><img src="{$smarty.const.ADRESA_FOTKA_HIAWATHA}" title="{#nadpisHiawatha#}"></a></li>
-					</ul>
-					<ul class="hlavniSlider 23">
-						{foreach $obrazkySeverka as $index => $adresa}
-							<li><a href="#slide{$index}"><img title="{#nadpisSeverka#}" data-src="{$adresa}"></a></li>
-						{/foreach}
-					</ul>
-					<ul class="hlavniSlider 27">
-						{foreach $obrazkyJizniKriz as $index => $adresa}
-							<li><a href="#slide{$index}"><img title="{#nadpisJizniKriz#}" data-src="{$adresa}"></a></li>
-						{/foreach}
-					</ul>
-					<ul class="hlavniSlider 28">
-						{foreach $obrazkyVlocka as $index => $adresa}
-							<li><a href="#slide{$index}"><img title="{#nadpisVlocka#}" data-src="{$adresa}"></a></li>
-						{/foreach}
-					</ul>
-					<ul class="hlavniSlider 29">
-						{foreach $obrazkyHiawatha as $index => $adresa}
-							<li><a href="#slide{$index}"><img title="{#nadpisHiawatha#}" data-src="{$adresa}"></a></li>
-						{/foreach}
-					</ul>
-				</div>
+				<ul class="hlavniSlider 2">
+					<li><a class="odkaz_severka"><img src="{$smarty.const.ADRESA_FOTKA_SEVERKA}" title="{#nadpisSeverka#}"></a></li>
+					<li><a class="odkaz_jizni_kriz"><img src="{$smarty.const.ADRESA_FOTKA_JIZNI_KRIZ}" title="{#nadpisJizniKriz#}"></a></li>
+					<li><a class="odkaz_vlocka"><img src="{$smarty.const.ADRESA_FOTKA_VLOCKA}" title="{#nadpisVlocka#}"></a></li>
+					<li><a class="odkaz_hiawatha"><img src="{$smarty.const.ADRESA_FOTKA_HIAWATHA}" title="{#nadpisHiawatha#}"></a></li>
+				</ul>
+				<ul class="hlavniSlider 23">
+					{foreach $obrazkySeverka as $index => $adresa}
+						<li><a href="#slide{$index}"><img title="{#nadpisSeverka#}" data-src="{$adresa}"></a></li>
+					{/foreach}
+				</ul>
+				<ul class="hlavniSlider 27">
+					{foreach $obrazkyJizniKriz as $index => $adresa}
+						<li><a href="#slide{$index}"><img title="{#nadpisJizniKriz#}" data-src="{$adresa}"></a></li>
+					{/foreach}
+				</ul>
+				<ul class="hlavniSlider 28">
+					{foreach $obrazkyVlocka as $index => $adresa}
+						<li><a href="#slide{$index}"><img title="{#nadpisVlocka#}" data-src="{$adresa}"></a></li>
+					{/foreach}
+				</ul>
+				<ul class="hlavniSlider 29">
+					{foreach $obrazkyHiawatha as $index => $adresa}
+						<li><a href="#slide{$index}"><img title="{#nadpisHiawatha#}" data-src="{$adresa}"></a></li>
+					{/foreach}
+				</ul>
             </div>								
-								
-			<div id="clanek">
-				<div id="clanek-pozadi-slider"></div>
-				<div id="2" class="info" style="color: {#barvaStredisko#}">
-					<h1>{#nadpisStredisko#}</h1>
-					{#textStredisko#}
-				</div>
-				<div id="23" class="info" style="color: {#barvaSeverka#}">
-					<h1>{#nadpisSeverka#}</h1>
-					{#textSeverka#}
-				</div>
-				<div id="27" class="info" style="color: {#barvaJizniKriz#}">
-					<h1>{#nadpisJizniKriz#}</h1>
-					{#textJizniKriz#}
-				</div>
-				<div id="28" class="info" style="color: {#barvaVlocka#}">
-					<h1>{#nadpisVlocka#}</h1>
-					{#textVlocka#}
-				</div>
-				<div id="29" class="info" style="color: {#barvaHiawatha#}">
-					<h1>{#nadpisHiawatha#}</h1>
-					{#textHiawatha#}
+			<div id="clanek-obal">				
+				<div id="clanek">
+	{*				<div id="clanek-pozadi-slider"></div>*}
+					<div id="2" class="info" style="color: {#barvaStredisko#}">
+						<h1>{#nadpisStredisko#}</h1>
+						{#textStredisko#}
+					</div>
+					<div id="23" class="info" style="color: {#barvaSeverka#}">
+						<h1>{#nadpisSeverka#}</h1>
+						{#textSeverka#}
+					</div>
+					<div id="27" class="info" style="color: {#barvaJizniKriz#}">
+						<h1>{#nadpisJizniKriz#}</h1>
+						{#textJizniKriz#}
+					</div>
+					<div id="28" class="info" style="color: {#barvaVlocka#}">
+						<h1>{#nadpisVlocka#}</h1>
+						{#textVlocka#}
+					</div>
+					<div id="29" class="info" style="color: {#barvaHiawatha#}">
+						<h1>{#nadpisHiawatha#}</h1>
+						{#textHiawatha#}
+					</div>
 				</div>
 			</div>
-        </div>
+		</div>	
 		
 		
 		{*<div id="obal-patka">

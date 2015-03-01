@@ -1,8 +1,8 @@
 
 $(document).ready(function(){
 
-//var rootUrl = '';
-var rootUrl = '/stredisko';
+var rootUrl = '';
+//var rootUrl = '/stredisko';
 
 window.sliders = [];
 
@@ -186,7 +186,12 @@ function nahrajSlider(stranka){
 		$(".hlavniSlider." + stranka.id + " img").attr("src", function() {return $(this).attr('data-src')});
 		stranka.imagesLoaded = true;
 		window.sliders[stranka.id] = $(activeSlider).slippry({
-			adaptiveHeight: false
+			adaptiveHeight: false,
+			transition: 'fade',
+			useCSS: true,
+			speed: 2000,
+			pause: 6000,
+			captions: false
 		});
 		$(activeSlider).data('loaded', 'true');
 		$(activeSlider).data('id', stranka.id);
@@ -214,6 +219,7 @@ function nahrajBarvuPozadi(stranka){
 	$('.domu .sestiuhelnik-obsah').css('background-color', barvaSvetlejsi);
 	$('#slider-obal .sestiuhelnik-obsah').css('background-color', barvaSvetlejsi);
 	$('#odkaz-ven .sestiuhelnik-obsah').css('background-color', barvaSvetlejsi);
+	$('#podstrana').css('background-color', barvaSvetlejsi);
 }
 
 function zmenSvetlostBarvy(barva, svetlo) {
