@@ -372,3 +372,20 @@ footer {
 	z-index: 3;
 }
 
+#slider-obal .sy-controls li a::after {
+	background-image: url("http://stopa.skauting.cz/Knihovny/slippry-1.2.7/images/arrows.svg");
+}
+
+
+#slider-obal .sy-controls li.sy-next, #slider-obal .sy-controls li.sy-prev {
+	top: 10vw;
+}
+
+#slider-obal .sy-controls li.sy-next {
+    right: 5vw;
+}
+
+#slider-obal .sy-box.sy-loading {
+	background-image: url("http://stopa.skauting.cz/Knihovny/slippry-1.2.7/images/sy-loader.gif");
+}
+

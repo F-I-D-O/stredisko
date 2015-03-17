@@ -1,14 +1,13 @@
 <?php
 
-
-
 const JMENO_SEVERKA = 'Severka';
 const JMENO_JIZNI_KRIZ = 'JizniKriz';
 const JMENO_VLOCKA = 'Vlocka';
 const JMENO_HIAWATHA = 'Hiawatha';
 
-const KOREN_WEBU = 'stredisko';
-//const KOREN_WEBU = '';
+define('KOREN_WEBU', Tools::onLocalhost() ? 'stredisko' : ''); 
+
+
 
 const ODDELOVAC_ADRESARU = '/';
 

@@ -21,7 +21,7 @@
 	<link rel="stylesheet" href="nivo-slider/themes/default/default.css" type="text/css" />
 	<script src="nivo-slider/jquery.nivo.slider.pack.js" type="text/javascript"></script>
 	
-	<script src="Knihovny/slippry-1.2.1/dist/slippry.min.js"></script>
+	<script src="Knihovny/slippry-1.2.7/dist/slippry.min.js"></script>
 	<link rel="stylesheet" href="Knihovny/slippry-1.2.7/dist/slippry.css" />
 
     {* Hlavní skript *}
@@ -32,6 +32,7 @@
 </head>
 
 <body 
+	data-koren-webu="/{$smarty.const.KOREN_WEBU}"
 	data-2='{literal}{{/literal}"barva": "{#barvaStredisko#}", "barvaSvetlejsi": "{#barvaStrediskoSvetlejsi#}"{literal}}{/literal}'
 	data-23='{literal}{{/literal}"barva": "{#barvaSeverka#}", "barvaSvetlejsi": "{#barvaSeverkaSvetlejsi#}"{literal}}{/literal}'
 	data-27='{literal}{{/literal}"barva": "{#barvaJizniKriz#}", "barvaSvetlejsi": "{#barvaJizniKrizSvetlejsi#}"{literal}}{/literal}'
@@ -138,22 +139,22 @@
 				</ul>
 				<ul class="hlavniSlider 23">
 					{foreach $obrazkySeverka as $index => $adresa}
-						<li><a href="#slide{$index}"><img title="{#nadpisSeverka#}" data-src="{$adresa}"></a></li>
+						<li><img title="{#nadpisSeverka#}" data-src="{$adresa}"></li>
 					{/foreach}
 				</ul>
 				<ul class="hlavniSlider 27">
 					{foreach $obrazkyJizniKriz as $index => $adresa}
-						<li><a href="#slide{$index}"><img title="{#nadpisJizniKriz#}" data-src="{$adresa}"></a></li>
+						<li><img title="{#nadpisJizniKriz#}" data-src="{$adresa}"></li>
 					{/foreach}
 				</ul>
 				<ul class="hlavniSlider 28">
 					{foreach $obrazkyVlocka as $index => $adresa}
-						<li><a href="#slide{$index}"><img title="{#nadpisVlocka#}" data-src="{$adresa}"></a></li>
+						<li><img title="{#nadpisVlocka#}" data-src="{$adresa}"></li>
 					{/foreach}
 				</ul>
 				<ul class="hlavniSlider 29">
 					{foreach $obrazkyHiawatha as $index => $adresa}
-						<li><a href="#slide{$index}"><img title="{#nadpisHiawatha#}" data-src="{$adresa}"></a></li>
+						<li><img title="{#nadpisHiawatha#}" data-src="{$adresa}"></li>
 					{/foreach}
 				</ul>
             </div>								

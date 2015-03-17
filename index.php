@@ -1,11 +1,17 @@
 <?php
 
+define('KORENOVA_CESTA', getcwd());
+
+spl_autoload_register(function ($class) {
+	if(file_exists(KORENOVA_CESTA . "/Tridy/{$class}.php")){
+		require KORENOVA_CESTA . "/Tridy/{$class}.php";
+	}
+});
+
 require 'cesty.php';
 require CESTA_SMARTY_KNIHOVNA;
 
-spl_autoload_register(function ($class) {
-    include 'Tridy/' . $class . '.php';
-});
+
 
 define ('POCATECNI_ADRESA',  (array_key_exists("stranka", $_GET) ? $_GET["stranka"] : ""));
 
