@@ -11,10 +11,14 @@
 
     {* JQuery *}
     <script src="{$smarty.const.ADRESA_JQUERY}"></script>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
 
 	{* jquery.reject*}
 	<script src="Knihovny/jReject/jquery.reject.min.js" type="text/javascript"></script>
 	<link rel="stylesheet" href="Knihovny/jReject/jquery.reject.css" type="text/css" />
+	
+	<script src="Knihovny/jquery.color-2.1.2.min.js"></script>
 
 	{* nivo slider *}
 	<link rel="stylesheet" href="nivo-slider/nivo-slider.css" type="text/css" />
@@ -32,7 +36,7 @@
 </head>
 
 <body 
-	data-koren-webu="/{$smarty.const.KOREN_WEBU}"
+	data-koren-webu="{$smarty.const.KOREN_WEBU}"
 	data-2='{literal}{{/literal}"barva": "{#barvaStredisko#}", "barvaSvetlejsi": "{#barvaStrediskoSvetlejsi#}"{literal}}{/literal}'
 	data-23='{literal}{{/literal}"barva": "{#barvaSeverka#}", "barvaSvetlejsi": "{#barvaSeverkaSvetlejsi#}"{literal}}{/literal}'
 	data-27='{literal}{{/literal}"barva": "{#barvaJizniKriz#}", "barvaSvetlejsi": "{#barvaJizniKrizSvetlejsi#}"{literal}}{/literal}'
@@ -130,6 +134,23 @@
                     </div>
                 </div>
             </a>
+			<div id="akce-strediska">
+				<h1>Střediskové akce</h1>
+				{foreach #nadpisAkce# as $nadpis}
+					<div class="akce-obal">
+						<a class="akce-odkaz" href="#odkazAkce#">
+							<div class="sestiuhelnik-obal-vnejsi">
+								<div class="sestiuhelnik-obal-vnitrni">
+									<div class="sestiuhelnik-obsah">
+										<h2>{$nadpis}</h2>
+									</div>
+								</div>
+							</div>
+						</a>
+						<div class="akce-text">{#textAkce#[$nadpis@index]}</div>
+					</div>	
+				{/foreach}
+			</div>
 			<div id="slider-obal">
 				<ul class="hlavniSlider 2">
 					<li><a class="odkaz_severka"><img src="{$smarty.const.ADRESA_FOTKA_SEVERKA}" title="{#nadpisSeverka#}"></a></li>

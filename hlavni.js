@@ -1,7 +1,6 @@
 
 $(document).ready(function(){
 
-var rootUrl = '';
 var rootUrl = $('body').data('koren-webu');
 
 window.sliders = [];
@@ -91,7 +90,7 @@ $.reject({
 
 var mapaStranek = new Object();
 mapaStranek[''] = new Stranka("", 0);
-mapaStranek['stredisko'] = new Stranka("", 2);
+mapaStranek['stredisko'] = new Stranka("stopa", 2);
 mapaStranek['severka'] = new Stranka("severka", 23);
 mapaStranek['jiznikriz'] = new Stranka("jiznikriz", 27);
 mapaStranek['vlocka'] = new Stranka("vlocka", 28);
@@ -111,6 +110,10 @@ $(window).on("popstate", function() {
 
 $(".odkaz_stredisko").click(function(){
     nahrajStranku(mapaStranek.get('stredisko'));
+});
+
+$(".odkaz_dalsi").click(function(){
+    nahrajStranku(mapaStranek.get('projekty'));
 });
 
 $(".odkaz_severka").click(function(){
@@ -147,15 +150,16 @@ function Stranka(adresa, id){
 }
 
 function nahrajStranku(stranka){
+//	alert(rootUrl + '/' + stranka.adresa);
 	window.history.pushState('', 'bbb', rootUrl + '/' + stranka.adresa);
 	nahrajObsahStranky(stranka);
 }
 
 function nahrajObsahStranky(stranka){
-    prepniTitulku(stranka);
+    prepniTypStranky(stranka);
 }
 
-function prepniTitulku(stranka){
+function prepniTypStranky(stranka){
     if(stranka.id === 0){
         $('#menu').addClass('titulka');
         $('#menu').removeClass('podstrana');
@@ -164,25 +168,35 @@ function prepniTitulku(stranka){
 		$('#odkaz-ven').hide();
     }
     else{
+		if(stranka.id === 20){
+			$('#akce-strediska').show(1000);
+			$('#slider-obal').hide();
+			$('#clanek-obal').hide();
+		}
+		else{
+			$('#akce-strediska').hide();
+			$('#slider-obal').show(1000);
+			$('#clanek-obal').show(1000);
+			nahrajObsahInfo(stranka);
+			nahrajSlider(stranka);
+		}		
         $('#menu').removeClass('titulka');
         $('#menu').addClass('podstrana');
         $('#podstrana').show();
 		nahrajBarvuPozadi(stranka);
-        nahrajObsahInfo(stranka);
 		nahrajMenu(stranka);
-        nahrajSlider(stranka);
 		nahrajOdkazVen(stranka);
     }
 }
 
 function nahrajObsahInfo(stranka){
-	$("#clanek").children('.info').css("display", "none");
-	$("#" + stranka.id).css("display", "block");
+	$("#clanek").children('.info').hide(1000);
+	$("#" + stranka.id).show(1000);
 }
 
 function nahrajMenu(stranka){
-	$('#menu > a').show();
-	$('#menu > a#menu-'  + stranka.id).hide();
+	$('#menu > a').show(1000);
+	$('#menu > a#menu-'  + stranka.id).hide(1000);
 }
 
 function nahrajSlider(stranka){
@@ -197,7 +211,7 @@ function nahrajSlider(stranka){
 		}
 	});
 	var activeSlider = $(".hlavniSlider." + stranka.id);
-	$(activeSlider).css("display", "block");
+	$(activeSlider).show();
 
 	if(!stranka.imagesLoaded){
 		$(".hlavniSlider." + stranka.id + " img").attr("src", function() {return $(this).attr('data-src')});
@@ -214,7 +228,7 @@ function nahrajSlider(stranka){
 		$(activeSlider).data('id', stranka.id);
 	}
 	else {
-		$(activeSlider).parents('.sy-box').css("display", "block");
+		$(activeSlider).parents('.sy-box').fadeIn(1000);
 		window.sliders[stranka.id].startAuto();
 	}
 	
@@ -224,11 +238,15 @@ function nahrajSlider(stranka){
 }
 
 function nahrajOdkazVen(stranka){
-	if(stranka.id !== 2){
+	if(stranka.id !== 2 && stranka.id !== 20){
 		var data = $('#odkaz-ven').data(stranka.id.toString());
 		$('#odkaz-ven').attr('href', data.link);
 		$('#odkaz-ven .text').html(data.text);
 		$('#odkaz-ven').show();
+	}
+	else{
+		
+		$('#odkaz-ven').hide();
 	}
 }
 
@@ -236,11 +254,25 @@ function nahrajBarvuPozadi(stranka){
 	var barva = $('body').data(stranka.id.toString()).barva;
 //	var barvaSvetlejsi = zmenSvetlostBarvy(barva, 0.99);
 	var barvaSvetlejsi = $('body').data(stranka.id.toString()).barvaSvetlejsi;
-	$('.design-rectangle').css('background-color', barva);
-	$('.domu .sestiuhelnik-obsah').css('background-color', barvaSvetlejsi);
-	$('#slider-obal .sestiuhelnik-obsah').css('background-color', barvaSvetlejsi);
-	$('#odkaz-ven .sestiuhelnik-obsah').css('background-color', barvaSvetlejsi);
-	$('#podstrana').css('background-color', barvaSvetlejsi);
+	
+	var barvaPozadi, barvaPodstrana, barvaOdkazDomu;
+	
+	if(stranka.id === 20){
+		barvaPozadi = barvaSvetlejsi;
+		barvaOdkazDomu = barva;
+		$('#odkaz-ven .sestiuhelnik-obsah').css('background-color', barva);
+		$('#podstrana').css('background-color', barva);
+	}
+	else{
+		barvaPozadi = barva;
+		barvaOdkazDomu = barvaSvetlejsi;
+		$('#slider-obal .sestiuhelnik-obsah').css('background-color', barvaSvetlejsi);
+		$('#odkaz-ven .sestiuhelnik-obsah').css('background-color', barvaSvetlejsi);
+		$('#podstrana').css('background-color', barvaSvetlejsi);
+	}
+	$(".design-rectangle").animate({'background-color': barvaPozadi}, 1000);
+	$(".domu .sestiuhelnik-obsah").animate({'background-color': barvaOdkazDomu}, 1000);
+	 
 }
 
 function zmenSvetlostBarvy(barva, svetlo) {

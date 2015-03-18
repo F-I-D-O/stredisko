@@ -12,6 +12,7 @@ class MySmarty extends Smarty{
         $this->setCacheDir(CESTA_SMARTY_CACHE);
 
         $this->caching = Smarty::CACHING_OFF;
+		$this->config_overwrite = false;
 
 
     }
