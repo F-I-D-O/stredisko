@@ -5,7 +5,7 @@ const JMENO_JIZNI_KRIZ = 'JizniKriz';
 const JMENO_VLOCKA = 'Vlocka';
 const JMENO_HIAWATHA = 'Hiawatha';
 
-define('KOREN_WEBU', Tools::onLocalhost() ? 'stredisko' : ''); 
+define('KOREN_WEBU', Tools::onLocalhost() ? '/stredisko' : ''); 
 
 
 
