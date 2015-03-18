@@ -155,6 +155,7 @@ footer {
 	height: 46.4vh;
     /*line-height: 46.4vh;*/
 	line-height: 5vh;
+    z-index: -1;
 }
 
 #menu.titulka a.odkaz_stredisko p, #menu.titulka a.odkaz_dalsi p {
