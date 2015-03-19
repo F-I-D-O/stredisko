@@ -59,28 +59,28 @@
 			<a id='menu-23' class="odkaz_severka sestiuhelnik-obal-vnejsi">
 				<div class="sestiuhelnik-obal-vnitrni">
 					<div class="sestiuhelnik-obsah" style="background-color: {#barvaSeverka#}">
-						{#nadpisSeverka#}
+						<p>{#nadpisSeverka#}</p>
 					</div>
 				</div>
 			</a>
 			<a id='menu-27' class="odkaz_jizni_kriz sestiuhelnik-obal-vnejsi">
 				<div class="sestiuhelnik-obal-vnitrni">
 					<div class="sestiuhelnik-obsah" style="background-color: {#barvaJizniKriz#}">
-						{#nadpisJizniKriz#}
+						<p>{#nadpisJizniKriz#}</p>
 					</div>
 				</div>
 			</a>
 			<a id='menu-28' class="odkaz_vlocka sestiuhelnik-obal-vnejsi">
 				<div class="sestiuhelnik-obal-vnitrni">
 					<div class="sestiuhelnik-obsah" style="background-color: {#barvaVlocka#}">
-						{#nadpisVlocka#}
+						<p>{#nadpisVlocka#}</p>
 					</div>
 				</div>
 			</a>
 			<a id='menu-29' class="odkaz_hiawatha sestiuhelnik-obal-vnejsi">
 				<div class="sestiuhelnik-obal-vnitrni">
 					<div class="sestiuhelnik-obsah" style="background-color: {#barvaHiawatha#}">
-						{#nadpisHiawatha#}
+						<p>{#nadpisHiawatha#}</p>
 					</div>
 				</div>
 			</a>
@@ -102,7 +102,7 @@
                 <div class="sestiuhelnik-obal-vnejsi">
                     <div class="sestiuhelnik-obal-vnitrni">
                         <div class="sestiuhelnik-obsah">
-                            <div class="text"></div>
+                            <p class="text"></p>
                         </div>
                     </div>
                 </div>

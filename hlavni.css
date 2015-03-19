@@ -216,7 +216,7 @@ footer {
 	width: 22vh;
     max-width: 30vw;
     position: fixed;
-    right: 0.83vh;
+    right: 1.83vh;
     top: 0.83vh;
 	z-index: 2;
 }
@@ -224,22 +224,22 @@ footer {
 #menu.podstrana a {
 	color: white;
     display: block;
-    font-size: 1.3vh;
+    font-size: 2.2vh;
 /*    height: 15.7vh;*/
-	height: 12vh;
-    line-height: 12vh;
+	height: 15vh;
+    line-height: 15vh;
     margin-bottom: 0.83vh;
     position: relative;
     text-align: center;
-    width: 14vh;
+    width: 18vh;
 }
 
 #menu.podstrana a p {
 	display: inline-block;
-    line-height: 1.5vh;
+    line-height: 2.5vh;
     margin: auto;
     vertical-align: middle;
-    width: 8vh;
+    width: 14vh;
 }
 
 
