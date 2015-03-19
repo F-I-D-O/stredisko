@@ -163,6 +163,10 @@ footer {
 	width: 20vh;
 }
 
+#menu.titulka a p {
+	margin: auto;
+}
+
 #menu.titulka a.odkaz_stredisko p {
 	margin-top: 16vh;
 }
