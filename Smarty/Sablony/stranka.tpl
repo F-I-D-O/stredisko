@@ -49,61 +49,49 @@
             <h1>Středisko Stopa Plzeň</h1>
         </div>*}
         <div id="menu" class="titulka">
-            <a id='menu-2' class="odkaz_stredisko">
-                <div class="sestiuhelnik-obal-vnejsi">
-                    <div class="sestiuhelnik-obal-vnitrni">
-                        <div class="sestiuhelnik-obsah" style="background-color: {#barvaStredisko#}">
-							<p>{#nadpisStredisko#}</p>                           
-                        </div>
-                    </div>
-                </div>
-            </a>
-            <a id='menu-23' class="odkaz_severka">
-                <div class="sestiuhelnik-obal-vnejsi">
-                    <div class="sestiuhelnik-obal-vnitrni">
-                        <div class="sestiuhelnik-obsah" style="background-color: {#barvaSeverka#}">
-                            {#nadpisSeverka#}
-                        </div>
-                    </div>
-                </div>
-            </a>
-            <a id='menu-27' class="odkaz_jizni_kriz">
-                <div class="sestiuhelnik-obal-vnejsi">
-                    <div class="sestiuhelnik-obal-vnitrni">
-                        <div class="sestiuhelnik-obsah" style="background-color: {#barvaJizniKriz#}">
-                            {#nadpisJizniKriz#}
-                        </div>
-                    </div>
-                </div>
-            </a>
-            <a id='menu-28' class="odkaz_vlocka">
-                <div class="sestiuhelnik-obal-vnejsi">
-                    <div class="sestiuhelnik-obal-vnitrni">
-                        <div class="sestiuhelnik-obsah" style="background-color: {#barvaVlocka#}">
-                            {#nadpisVlocka#}
-                        </div>
-                    </div>
-                </div>
-            </a>
-            <a id='menu-29' class="odkaz_hiawatha">
-                <div class="sestiuhelnik-obal-vnejsi">
-                    <div class="sestiuhelnik-obal-vnitrni">
-                        <div class="sestiuhelnik-obsah" style="background-color: {#barvaHiawatha#}">
-                            {#nadpisHiawatha#}
-                        </div>
-                    </div>
-                </div>
-            </a>
-
-            <a id='menu-20' class="odkaz_dalsi">
-                <div class="sestiuhelnik-obal-vnejsi">
-                    <div class="sestiuhelnik-obal-vnitrni">
-                        <div class="sestiuhelnik-obsah" style="background-color: {#barvaOstatni#}">
-                            <p>{#nadpisDalsi#}</p>
-                        </div>
-                    </div>
-                </div>
-            </a>	
+			<a id='menu-2' class="sestiuhelnik-obal-vnejsi odkaz_stredisko">
+				<div class="sestiuhelnik-obal-vnitrni">
+					<div class="sestiuhelnik-obsah" style="background-color: {#barvaStredisko#}">
+						<p>{#nadpisStredisko#}</p>                           
+					</div>
+				</div>
+			</a>
+			<a id='menu-23' class="odkaz_severka sestiuhelnik-obal-vnejsi">
+				<div class="sestiuhelnik-obal-vnitrni">
+					<div class="sestiuhelnik-obsah" style="background-color: {#barvaSeverka#}">
+						{#nadpisSeverka#}
+					</div>
+				</div>
+			</a>
+			<a id='menu-27' class="odkaz_jizni_kriz sestiuhelnik-obal-vnejsi">
+				<div class="sestiuhelnik-obal-vnitrni">
+					<div class="sestiuhelnik-obsah" style="background-color: {#barvaJizniKriz#}">
+						{#nadpisJizniKriz#}
+					</div>
+				</div>
+			</a>
+			<a id='menu-28' class="odkaz_vlocka sestiuhelnik-obal-vnejsi">
+				<div class="sestiuhelnik-obal-vnitrni">
+					<div class="sestiuhelnik-obsah" style="background-color: {#barvaVlocka#}">
+						{#nadpisVlocka#}
+					</div>
+				</div>
+			</a>
+			<a id='menu-29' class="odkaz_hiawatha sestiuhelnik-obal-vnejsi">
+				<div class="sestiuhelnik-obal-vnitrni">
+					<div class="sestiuhelnik-obsah" style="background-color: {#barvaHiawatha#}">
+						{#nadpisHiawatha#}
+					</div>
+				</div>
+			</a>
+			<a id='menu-20' class="odkaz_dalsi sestiuhelnik-obal-vnejsi">
+				<div class="sestiuhelnik-obal-vnitrni">
+					<div class="sestiuhelnik-obsah" style="background-color: {#barvaOstatni#}">
+						<p>{#nadpisDalsi#}</p>
+					</div>
+				</div>
+			</a>
+           
 						
 			<a	id='odkaz-ven'
 				target="_blank"

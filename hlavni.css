@@ -388,11 +388,15 @@ footer {
 	background-image: url("http://stopa.skauting.cz/Knihovny/slippry-1.2.7/images/sy-loader.gif");
 }
 
+#slider-obal .sy-pager li a {
+	background-color: #FFFFFF;
+}
+
 /* Akce střediska */
 
 #akce-strediska {
-	width: 45vw;
-	margin-left: 12vw;
+	width: 55vw;
+	margin-left: 10vw;
     margin-top: 16vw;
 	color: white;
 }
