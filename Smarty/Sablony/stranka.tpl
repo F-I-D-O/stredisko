@@ -172,23 +172,23 @@
 	{*				<div id="clanek-pozadi-slider"></div>*}
 					<div id="2" class="info" style="color: {#barvaStredisko#}">
 						<h1>{#nadpisStredisko#}</h1>
-						{#textStredisko#}
+						{#textStredisko#|ceskeZalamovaniPredlozek}
 					</div>
 					<div id="23" class="info" style="color: {#barvaSeverka#}">
 						<h1>{#nadpisSeverka#}</h1>
-						{#textSeverka#}
+						{#textSeverka#|ceskeZalamovaniPredlozek}
 					</div>
 					<div id="27" class="info" style="color: {#barvaJizniKriz#}">
 						<h1>{#nadpisJizniKriz#}</h1>
-						{#textJizniKriz#}
+						{#textJizniKriz#|ceskeZalamovaniPredlozek}
 					</div>
 					<div id="28" class="info" style="color: {#barvaVlocka#}">
 						<h1>{#nadpisVlocka#}</h1>
-						{#textVlocka#}
+						{#textVlocka#|ceskeZalamovaniPredlozek}
 					</div>
 					<div id="29" class="info" style="color: {#barvaHiawatha#}">
 						<h1>{#nadpisHiawatha#}</h1>
-						{#textHiawatha#}
+						{#textHiawatha#|ceskeZalamovaniPredlozek}
 					</div>
 				</div>
 			</div>

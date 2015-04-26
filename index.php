@@ -1,5 +1,8 @@
 <?php
 
+const PREDLOZKY = '/ ([ksvzaiouKSVZAIOU]) /';
+const NAHRADA_NEDELITELNOU_MEZEROU = ' \\1&nbsp;';
+
 define('KORENOVA_CESTA', getcwd());
 
 spl_autoload_register(function ($class) {
@@ -43,4 +46,8 @@ function pripravObrazky($cesta, $jmenoPromenne){
 function cestaNaAdresu($cesta){
 	$relativni_cesta = substr($cesta, strlen(getcwd()));
 	return ADRESA_KOREN_WEBU . ODDELOVAC_ADRESARU . $relativni_cesta;
+}
+
+function ceskeZalamovaniPredlozek($string) {
+	return preg_replace(PREDLOZKY, NAHRADA_NEDELITELNOU_MEZEROU, $string);
 }
