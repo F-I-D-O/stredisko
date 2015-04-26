@@ -337,7 +337,7 @@ footer {
 }
 
 #slider-obal img {
-	/*width: 85vw;*/
+	min-width: 75vw;
 	height: 101vh;
 }
 
