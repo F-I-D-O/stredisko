@@ -328,18 +328,7 @@ footer {
 	margin-top: 3vh;
 }
 
-#slider-obal {
-    left: 0vw;
-    position: absolute;
-    top: 1.4vw;
-    width: 85vw;
-	z-index: 0;
-}
 
-#slider-obal img {
-	min-width: 75vw;
-	height: 101vh;
-}
 
 #clanek {
     box-sizing: border-box;
@@ -364,15 +353,30 @@ footer {
 
 /* slider */
 
+#slider-obal {
+    left: 0vw;
+    position: absolute;
+    top: 1.4vw;
+    width: 85vw;
+	z-index: 0;
+}
+
+#slider-obal img {
+	min-width: 75vw;
+    min-height: 50vw;
+    width: 153vh;
+	height: 101vh;
+}
+
 #slider-obal .sy-caption-wrap {
 	left: 23vw;
 	top: 8vw;
 }
 
 #slider-obal .sy-pager {
-	position: absolute;
+	position: fixed;
 	left: -6vw;
-	bottom: 4vw;
+	bottom: 1vw;
 	z-index: 3;
 }
 
