@@ -90,7 +90,7 @@ $.reject({
 
 var mapaStranek = new Object();
 mapaStranek[''] = new Stranka("", 0);
-mapaStranek['stredisko'] = new Stranka("stopa", 2);
+mapaStranek['stredisko'] = new Stranka("stredisko", 2);
 mapaStranek['severka'] = new Stranka("severka", 23);
 mapaStranek['jiznikriz'] = new Stranka("jiznikriz", 27);
 mapaStranek['vlocka'] = new Stranka("vlocka", 28);
