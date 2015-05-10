@@ -421,26 +421,26 @@ footer {
 }
 
 #akce-strediska .akce-obal .akce-odkaz {
-	height: 4vw;
+	height: 5vw;
     left: -1vw;
     position: absolute;
-    width: 4.8vw;
+    width: 6vw;
 	text-align: center;
 }
 
 #akce-strediska .akce-obal .sestiuhelnik-obsah {
-	line-height: 4vw;
+	line-height: 5vw;
 	background-color: #FFFFFF;
 	color: #000000;
 }
 
 #akce-strediska .akce-obal .sestiuhelnik-obsah h2 {
 	display: inline-block;
-    line-height: 0.5vw;
+    line-height: 0.7vw;
     margin: auto;
     vertical-align: middle;
     width: 4vw;
-	font-size: 0.5vw;
+	font-size: 0.7vw;
 }
 
 #akce-strediska .akce-obal .sestiuhelnik-obal-vnejsi {
