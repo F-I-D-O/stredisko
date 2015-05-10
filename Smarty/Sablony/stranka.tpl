@@ -126,7 +126,7 @@
 				<h1>Naše základna, akce a projekty střediska</h1>
 				{foreach #nadpisAkce# as $nadpis}
 					<div class="akce-obal">
-						<a class="akce-odkaz" href="#odkazAkce#">
+						<a class="akce-odkaz" target="_blank" href="{#odkazAkce#[$nadpis@index]}">
 							<div class="sestiuhelnik-obal-vnejsi">
 								<div class="sestiuhelnik-obal-vnitrni">
 									<div class="sestiuhelnik-obsah">
