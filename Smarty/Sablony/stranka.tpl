@@ -123,7 +123,7 @@
                 </div>
             </a>
 			<div id="akce-strediska">
-				<h1>Střediskové akce</h1>
+				<h1>Naše základna, akce a projekty střediska</h1>
 				{foreach #nadpisAkce# as $nadpis}
 					<div class="akce-obal">
 						<a class="akce-odkaz" href="#odkazAkce#">
