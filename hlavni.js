@@ -264,11 +264,20 @@ function nahrajBarvuPozadi(stranka){
 		$('#podstrana').css('background-color', barva);
 	}
 	else{
-		barvaPozadi = barva;
-		barvaOdkazDomu = barvaTmavsi;
-		$('#slider-obal .sestiuhelnik-obsah').css('background-color', barvaTmavsi);
-		$('#odkaz-ven .sestiuhelnik-obsah').css('background-color', barvaTmavsi);
-		$('#podstrana').css('background-color', barvaTmavsi);
+        if(stranka.id === 28 || stranka.id === 27){
+            barvaPozadi = barva;
+            barvaOdkazDomu = barvaTmavsi;
+            $('#slider-obal .sestiuhelnik-obsah').css('background-color', barvaTmavsi);
+            $('#odkaz-ven .sestiuhelnik-obsah').css('background-color', barvaTmavsi);
+            $('#podstrana').css('background-color', barvaTmavsi);
+        }
+        else{
+            barvaPozadi = barvaTmavsi;
+            barvaOdkazDomu = barva;
+            $('#slider-obal .sestiuhelnik-obsah').css('background-color', barva);
+            $('#odkaz-ven .sestiuhelnik-obsah').css('background-color', barva);
+            $('#podstrana').css('background-color', barva);
+        }
 	}
 	$(".design-rectangle").animate({'background-color': barvaPozadi}, 1000);
 	$(".domu .sestiuhelnik-obsah").animate({'background-color': barvaOdkazDomu}, 1000);
