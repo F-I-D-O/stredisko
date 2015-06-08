@@ -162,6 +162,7 @@ function nahrajObsahStranky(stranka){
 function prepniTypStranky(stranka){
     if(stranka.id === 0){
         $('#menu').addClass('titulka');
+        $('#logo').addClass('titulka');
         $('#menu').removeClass('podstrana');
         $('#podstrana').hide();
 		$('#menu > a').show();
@@ -181,6 +182,7 @@ function prepniTypStranky(stranka){
 			nahrajSlider(stranka);
 		}		
         $('#menu').removeClass('titulka');
+        $('#logo').removeClass('titulka');
         $('#menu').addClass('podstrana');
         $('#podstrana').show();
 		nahrajBarvuPozadi(stranka);

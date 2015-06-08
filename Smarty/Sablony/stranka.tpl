@@ -48,57 +48,58 @@
         {*<div id="nadpis">
             <h1>Středisko Stopa Plzeň</h1>
         </div>*}
+        <div id="logo"></div>
         <div id="menu" class="titulka">
-			<a id='menu-2' class="sestiuhelnik-obal-vnejsi odkaz_stredisko">
-				<div class="sestiuhelnik-obal-vnitrni">
-					<div class="sestiuhelnik-obsah" style="background-color: {#barvaStredisko#}">
-						<p>{#nadpisStredisko#}</p>                           
-					</div>
-				</div>
-			</a>
-			<a id='menu-23' class="odkaz_severka sestiuhelnik-obal-vnejsi">
-				<div class="sestiuhelnik-obal-vnitrni">
-					<div class="sestiuhelnik-obsah" style="background-color: {#barvaSeverka#}">
-						<p>{#nadpisSeverka#}</p>
-					</div>
-				</div>
-			</a>
-			<a id='menu-27' class="odkaz_jizni_kriz sestiuhelnik-obal-vnejsi">
-				<div class="sestiuhelnik-obal-vnitrni">
-					<div class="sestiuhelnik-obsah" style="background-color: {#barvaJizniKriz#}">
-						<p>{#nadpisJizniKriz#}</p>
-					</div>
-				</div>
-			</a>
-			<a id='menu-28' class="odkaz_vlocka sestiuhelnik-obal-vnejsi">
-				<div class="sestiuhelnik-obal-vnitrni">
-					<div class="sestiuhelnik-obsah" style="background-color: {#barvaVlocka#}">
-						<p>{#nadpisVlocka#}</p>
-					</div>
-				</div>
-			</a>
-			<a id='menu-29' class="odkaz_hiawatha sestiuhelnik-obal-vnejsi">
-				<div class="sestiuhelnik-obal-vnitrni">
-					<div class="sestiuhelnik-obsah" style="background-color: {#barvaHiawatha#}">
-						<p>{#nadpisHiawatha#}</p>
-					</div>
-				</div>
-			</a>
-			<a id='menu-20' class="odkaz_dalsi sestiuhelnik-obal-vnejsi">
-				<div class="sestiuhelnik-obal-vnitrni">
-					<div class="sestiuhelnik-obsah" style="background-color: {#barvaOstatni#}">
-						<p>{#nadpisDalsi#}</p>
-					</div>
-				</div>
-			</a>
+                    <a id='menu-2' class="sestiuhelnik-obal-vnejsi odkaz_stredisko">
+                        <div class="sestiuhelnik-obal-vnitrni">
+                            <div class="sestiuhelnik-obsah" style="background-color: {#barvaStredisko#}">
+                                <p>{#nadpisStredisko#}</p>                           
+                            </div>
+                        </div>
+                    </a>
+                    <a id='menu-23' class="odkaz_severka sestiuhelnik-obal-vnejsi">
+                        <div class="sestiuhelnik-obal-vnitrni">
+                            <div class="sestiuhelnik-obsah" style="background-color: {#barvaSeverka#}">
+                                <p>{#nadpisSeverka#}</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a id='menu-27' class="odkaz_jizni_kriz sestiuhelnik-obal-vnejsi">
+                        <div class="sestiuhelnik-obal-vnitrni">
+                            <div class="sestiuhelnik-obsah" style="background-color: {#barvaJizniKriz#}">
+                                <p>{#nadpisJizniKriz#}</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a id='menu-28' class="odkaz_vlocka sestiuhelnik-obal-vnejsi">
+                        <div class="sestiuhelnik-obal-vnitrni">
+                            <div class="sestiuhelnik-obsah" style="background-color: {#barvaVlocka#}">
+                                <p>{#nadpisVlocka#}</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a id='menu-29' class="odkaz_hiawatha sestiuhelnik-obal-vnejsi">
+                        <div class="sestiuhelnik-obal-vnitrni">
+                            <div class="sestiuhelnik-obsah" style="background-color: {#barvaHiawatha#}">
+                                <p>{#nadpisHiawatha#}</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a id='menu-20' class="odkaz_dalsi sestiuhelnik-obal-vnejsi">
+                        <div class="sestiuhelnik-obal-vnitrni">
+                            <div class="sestiuhelnik-obsah" style="background-color: {#barvaOstatni#}">
+                                <p>{#nadpisDalsi#}</p>
+                            </div>
+                        </div>
+                    </a>
            
-						
-			<a	id='odkaz-ven'
-				target="_blank"
-				data-23='{literal}{{/literal}"link": "{#odkazVenSeverka#}", "text": "{#textOdkazVenSeverka#}"{literal}}{/literal}'
-				data-27='{literal}{{/literal}"link": "{#odkazVenJizniKriz#}", "text": "{#textOdkazVenJizniKriz#}"{literal}}{/literal}'
-				data-28='{literal}{{/literal}"link": "{#odkazVenVlocka#}", "text": "{#textOdkazVenVlocka#}"{literal}}{/literal}'
-				data-29='{literal}{{/literal}"link": "{#odkazVenHiawatha#}", "text": "{#textOdkazVenHiawatha#}"{literal}}{/literal}'>
+                                
+                    <a    id='odkaz-ven'
+                        target="_blank"
+                        data-23='{literal}{{/literal}"link": "{#odkazVenSeverka#}", "text": "{#textOdkazVenSeverka#}"{literal}}{/literal}'
+                        data-27='{literal}{{/literal}"link": "{#odkazVenJizniKriz#}", "text": "{#textOdkazVenJizniKriz#}"{literal}}{/literal}'
+                        data-28='{literal}{{/literal}"link": "{#odkazVenVlocka#}", "text": "{#textOdkazVenVlocka#}"{literal}}{/literal}'
+                        data-29='{literal}{{/literal}"link": "{#odkazVenHiawatha#}", "text": "{#textOdkazVenHiawatha#}"{literal}}{/literal}'>
                 <div class="sestiuhelnik-obal-vnejsi">
                     <div class="sestiuhelnik-obal-vnitrni">
                         <div class="sestiuhelnik-obsah">
@@ -106,14 +107,14 @@
                         </div>
                     </div>
                 </div>
-            </a>			
+            </a>            
         </div>
-			
+                    
         <div id="podstrana">
             <div id="first-design-rrectangle" class="design-rectangle"></div>
             <div id="second-design-rrectangle" class="design-rectangle"></div>
             <div id="third-design-rrectangle" class="design-rectangle"></div>
-			<a class='domu'>
+                    <a class='domu'>
                 <div class="sestiuhelnik-obal-vnejsi">
                     <div class="sestiuhelnik-obal-vnitrni">
                         <div class="sestiuhelnik-obsah">
@@ -122,26 +123,26 @@
                     </div>
                 </div>
             </a>
-			<div id="akce-strediska">
-				<h1>Naše základna, akce a projekty střediska</h1>
-				{foreach #nadpisAkce# as $nadpis}
-					<div class="akce-obal">
-						<a class="akce-odkaz" target="_blank" href="{#odkazAkce#[$nadpis@index]}">
-							<div class="sestiuhelnik-obal-vnejsi">
-								<div class="sestiuhelnik-obal-vnitrni">
-									<div class="sestiuhelnik-obsah">
-										<h2>{$nadpis}</h2>
-									</div>
-								</div>
-							</div>
-						</a>
-						<div class="akce-text">{#textAkce#[$nadpis@index]}</div>
-					</div>	
-				{/foreach}
-			</div>
-			<div id="slider-obal">
-				<ul class="hlavniSlider 2">
-					<li><a class="odkaz_severka"><img src="{$smarty.const.ADRESA_FOTKA_SEVERKA}" title="{#nadpisSeverka#}"></a></li>
+                    <div id="akce-strediska">
+                        <h1>Naše základna, akce a projekty střediska</h1>
+                        {foreach #nadpisAkce# as $nadpis}
+                            <div class="akce-obal">
+                                <a class="akce-odkaz" target="_blank" href="{#odkazAkce#[$nadpis@index]}">
+                                    <div class="sestiuhelnik-obal-vnejsi">
+                                        <div class="sestiuhelnik-obal-vnitrni">
+                                            <div class="sestiuhelnik-obsah">
+                                                <h2>{$nadpis}</h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="akce-text">{#textAkce#[$nadpis@index]}</div>
+                            </div>    
+                        {/foreach}
+                    </div>
+                    <div id="slider-obal">
+                        <ul class="hlavniSlider 2">
+                            <li><a class="odkaz_severka"><img src="{$smarty.const.ADRESA_FOTKA_SEVERKA}" title="{#nadpisSeverka#}"></a></li>
 					<li><a class="odkaz_jizni_kriz"><img src="{$smarty.const.ADRESA_FOTKA_JIZNI_KRIZ}" title="{#nadpisJizniKriz#}"></a></li>
 					<li><a class="odkaz_vlocka"><img src="{$smarty.const.ADRESA_FOTKA_VLOCKA}" title="{#nadpisVlocka#}"></a></li>
 					<li><a class="odkaz_hiawatha"><img src="{$smarty.const.ADRESA_FOTKA_HIAWATHA}" title="{#nadpisHiawatha#}"></a></li>
