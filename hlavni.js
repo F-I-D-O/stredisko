@@ -167,11 +167,15 @@ function prepniTypStranky(stranka){
         $('#podstrana').hide();
 		$('#menu > a').show();
 		$('#odkaz-ven').hide();
+        nahrajSlider(stranka);
+        setTimeout(function(){
+            $("#hlavni > #slider-obal").animate({'opacity': 1.0}, 2000);
+        }, 3000); 
     }
     else{
 		if(stranka.id === 20){
 			$('#akce-strediska').show(1000);
-			$('#slider-obal').hide();
+            vypniVsechnySlidery();
 			$('#clanek-obal').hide();
 		}
 		else{
@@ -189,6 +193,19 @@ function prepniTypStranky(stranka){
 		nahrajMenu(stranka);
 		nahrajOdkazVen(stranka);
     }
+}
+
+function vypniVsechnySlidery(){
+    $(".hlavniSlider").each(function () {
+		if($(this).data('loaded')){
+			var id = $(this).data('id');
+			window.sliders[id].stopAuto();
+			$(this).parents('.sy-box').css("display", "none");
+		}
+		else{
+			$(this).css("display", "none");
+		}
+	});
 }
 
 function nahrajObsahInfo(stranka){
@@ -217,6 +234,61 @@ function nahrajSlider(stranka){
 
 	if(!stranka.imagesLoaded){
 		$(".hlavniSlider." + stranka.id + " img").attr("src", function() {return $(this).attr('data-src')});
+		stranka.imagesLoaded = true;
+        if(stranka.id === 0){
+            window.sliders[stranka.id] = $(activeSlider).slippry({
+                adaptiveHeight: false,
+                transition: 'kenburns',
+                useCSS: true,
+                speed: 10000,
+                pause: 2000,
+                captions: false,
+                autoHover: false,
+                pager: false,
+                controls: false,
+                autoDelay: 2000
+            });
+        }
+        else{
+            window.sliders[stranka.id] = $(activeSlider).slippry({
+                adaptiveHeight: false,
+                transition: 'fade',
+                useCSS: true,
+                speed: 2000,
+                pause: 6000,
+                captions: false
+            });
+        }
+		$(activeSlider).data('loaded', 'true');
+		$(activeSlider).data('id', stranka.id);
+	}
+	else {
+		$(activeSlider).parents('.sy-box').fadeIn(1000);
+		window.sliders[stranka.id].startAuto();
+	}
+	if(stranka.id !== 0){
+        deleteCSSRule(0);
+        addCSSRule("#slider-obal .sy-pager li.sy-active a", 
+            "background-color: " + $('body').data(stranka.id.toString()).barva, 0);
+    }
+}
+
+function nahrajUvodniSlider(stranka){
+	$(".hlavniSlider:not(.uvodni)").each(function () {
+		if($(this).data('loaded')){
+			var id = $(this).data('id');
+			window.sliders[id].stopAuto();
+			$(this).parents('.sy-box').css("display", "none");
+		}
+		else{
+			$(this).css("display", "none");
+		}
+	});
+	var activeSlider = $(".hlavniSlider.uvodni");
+	$(activeSlider).show();
+
+	if(!stranka.imagesLoaded){
+		$(".hlavniSlider.uvodni img").attr("src", function() {return $(this).attr('data-src')});
 		stranka.imagesLoaded = true;
 		window.sliders[stranka.id] = $(activeSlider).slippry({
 			adaptiveHeight: false,

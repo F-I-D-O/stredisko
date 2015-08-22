@@ -29,17 +29,17 @@ footer {
 
 #logo {
     position: absolute;
-    width: 200px;
-    height: 250px;
+    width: 100px;
+    height: 120px;
     background: url(Obrazky/logo-seda.png) no-repeat; 
-    top: 1vw;
-    left: 65vw;
+    top: 8vw;
+    left: 64vw;
     z-index: 2;
 }
 
 #logo.titulka {
     top: 5vh;
-    right: 5vw;
+    right: 5vh;
     left: auto;
 }
 
@@ -368,15 +368,30 @@ footer {
 
 /* slider */
 
+.hlavniSlider {
+    list-style-type: none;
+}
+
 #slider-obal {
     left: 0vw;
     position: absolute;
+    width: 100vw;
+	z-index: 0;   
+    opacity: 0;
+}
+
+#podstrana #slider-obal {
     top: 1.4vw;
     width: 85vw;
-	z-index: 0;
+    opacity: 1.0;
+/*    visibility: visible;*/
 }
 
 #slider-obal img {
+    width: 140vw;
+}
+
+#podstrana #slider-obal img {
 	min-width: 75vw;
     min-height: 50vw;
     width: 153vh;
@@ -426,13 +441,20 @@ footer {
 }
 
 #akce-strediska .akce-obal {
-	float: left;
 	position: relative;
 	box-sizing: border-box;
 	width: 47%;
 	min-width: 300px;
 	margin-right: 3%;
-	margin-bottom: 4vw;
+	margin-bottom: 2vw;
+}
+
+#akce-strediska .akce-obal.licha {
+    float: left;
+}
+
+#akce-strediska .akce-obal.suda {
+    float: right;
 }
 
 #akce-strediska .akce-obal .akce-odkaz {
