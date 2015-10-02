@@ -405,7 +405,7 @@ footer {
 
 #slider-obal .sy-pager {
 	position: fixed;
-	left: -6vw;
+	left: -15vw;
 	bottom: 1vw;
 	z-index: 3;
 }
