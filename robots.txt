@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /Smarty/
+Disallow: /Tridy/
+Disallow: /sec/
+Disallow: /test
+
+Sitemap: http://stopaplzen.skauting.cz/sitemap.xml

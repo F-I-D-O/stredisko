@@ -5,42 +5,46 @@
 <head>
     {* Používané meta tagy *}
     <meta charset="UTF-8">
-
+    <title>Junák - středisko Stopa Plzeň</title>
+    <meta name="description" content="Junák - Český skaut, středisko Stopa Plzeň. Skautské středisko působící v 
+          Boleci, v centru, na Skvrňanech i na Slovanech"/>
+    <meta name="author" content="Fido"/>
+    
     {* hlavní soubor stylu *}
     <link href="{$smarty.const.ADRESA_GLOBALNI_STYL}" rel='stylesheet' type='text/css'>
-
+    
     {* JQuery *}
     <script src="{$smarty.const.ADRESA_JQUERY}"></script>
-	
-	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
+        
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
 
-	{* jquery.reject*}
-	<script src="Knihovny/jReject/jquery.reject.min.js" type="text/javascript"></script>
-	<link rel="stylesheet" href="Knihovny/jReject/jquery.reject.css" type="text/css" />
-	
-	<script src="Knihovny/jquery.color-2.1.2.min.js"></script>
+    {* jquery.reject*}
+    <script src="Knihovny/jReject/jquery.reject.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="Knihovny/jReject/jquery.reject.css" type="text/css" />
 
-	{* nivo slider *}
-	<link rel="stylesheet" href="nivo-slider/nivo-slider.css" type="text/css" />
-	<link rel="stylesheet" href="nivo-slider/themes/default/default.css" type="text/css" />
-	<script src="nivo-slider/jquery.nivo.slider.pack.js" type="text/javascript"></script>
-	
-	<script src="Knihovny/slippry-1.2.7/dist/slippry.min.js"></script>
-	<link rel="stylesheet" href="Knihovny/slippry-1.2.7/dist/slippry.css" />
+    <script src="Knihovny/jquery.color-2.1.2.min.js"></script>
 
+    {* nivo slider *}
+    <link rel="stylesheet" href="nivo-slider/nivo-slider.css" type="text/css" />
+    <link rel="stylesheet" href="nivo-slider/themes/default/default.css" type="text/css" />
+    <script src="nivo-slider/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+    <script src="Knihovny/slippry-1.2.7/dist/slippry.min.js"></script>
+    <link rel="stylesheet" href="Knihovny/slippry-1.2.7/dist/slippry.css" />
+    
     {* Hlavní skript *}
     <script src="{$smarty.const.ADRESA_GLOBALNI_SKRIPT}"></script>
-
-	{* pro správnou počáteční stránku *}
-	<meta name="pocatecni_stranka" content="{$smarty.const.POCATECNI_ADRESA}">
+    
+    {* pro správnou počáteční stránku *}
+    <meta name="pocatecni_stranka" content="{$smarty.const.POCATECNI_ADRESA}">
     
     <script>
         {literal}
-            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]\|\|function(){
+            (i[r].q=i[r].q\|\|[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
             m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
             })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
+    
             ga('create', 'UA-63604463-2', 'auto');
             ga('send', 'pageview');
         {/literal}
@@ -63,7 +67,7 @@
         <div id="slider-obal">
             <ul class="hlavniSlider 0">
                 {foreach $obrazkyStredisko as $index => $adresa}
-                    <li><img title="{#nadpisStredisko#}" data-src="{$adresa}"></li>
+                    <li><img title="{#nadpisStredisko#}" alt="{#nadpisStredisko#}" data-src="{$adresa}"></li>
                 {/foreach}
             </ul>
         </div>
@@ -168,27 +172,27 @@
                 </ul>*}
                 <ul class="hlavniSlider 2">
                     {foreach $obrazkyStredisko as $index => $adresa}
-                        <li><img title="{#nadpisStredisko#}" data-src="{$adresa}"></li>
+                        <li><img title="{#nadpisStredisko#}" alt="{#nadpisStredisko#}" data-src="{$adresa}"></li>
                     {/foreach}
                 </ul>
                 <ul class="hlavniSlider 23">
                     {foreach $obrazkySeverka as $index => $adresa}
-                        <li><img title="{#nadpisSeverka#}" data-src="{$adresa}"></li>
+                        <li><img title="{#nadpisSeverka#}" alt="{#nadpisSeverka#}" data-src="{$adresa}"></li>
                     {/foreach}
                 </ul>
                 <ul class="hlavniSlider 27">
                     {foreach $obrazkyJizniKriz as $index => $adresa}
-                        <li><img title="{#nadpisJizniKriz#}" data-src="{$adresa}"></li>
+                        <li><img title="{#nadpisJizniKriz#}" alt="{#nadpisJizniKriz#}" data-src="{$adresa}"></li>
                     {/foreach}
                 </ul>
                 <ul class="hlavniSlider 28">
                     {foreach $obrazkyVlocka as $index => $adresa}
-                        <li><img title="{#nadpisVlocka#}" data-src="{$adresa}"></li>
+                        <li><img title="{#nadpisVlocka#}" alt="{#nadpisVlocka#}" data-src="{$adresa}"></li>
                     {/foreach}
                 </ul>
                 <ul class="hlavniSlider 29">
                     {foreach $obrazkyHiawatha as $index => $adresa}
-                        <li><img title="{#nadpisHiawatha#}" data-src="{$adresa}"></li>
+                        <li><img title="{#nadpisHiawatha#}" alt="{#nadpisHiawatha#}" data-src="{$adresa}"></li>
                     {/foreach}
                 </ul>
             </div>								
