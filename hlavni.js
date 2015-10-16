@@ -134,6 +134,23 @@ $(".domu").click(function(){
 	nahrajStranku(mapaStranek.get(''));
 });
 
+
+$(".akce-obal").mouseenter(function(){
+    var obal = $(this);
+    $(this).find("a .sestiuhelnik-obsah.no-over").fadeOut(200, function(){
+            $(obal).find("a .sestiuhelnik-obsah.hover").fadeIn(200);
+        }
+    );
+});
+
+$(".akce-obal").mouseleave(function(){
+    var obal = $(this);
+    $(this).find("a .sestiuhelnik-obsah.hover").fadeOut(200, function(){
+            $(obal).find("a .sestiuhelnik-obsah.no-over").fadeIn(200);
+        }
+    );
+});
+
 function strankaZUrl(){
     var url = document.URL;
     var urlParts = url.split('/');
@@ -314,7 +331,7 @@ function nahrajOdkazVen(stranka){
 		var data = $('#odkaz-ven').data(stranka.id.toString());
 		$('#odkaz-ven').attr('href', data.link);
 		$('#odkaz-ven .text').html(data.text);
-		$('#odkaz-ven').show();
+		$('#odkaz-ven').css('display', 'block');
 	}
 	else{
 		
@@ -389,7 +406,6 @@ function addCSSRule(selector, rules, index) {
 function deleteCSSRule(index) {
 	sheet.deleteRule(0);
 }
-
 
 
 });

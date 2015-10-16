@@ -247,7 +247,7 @@ footer {
 /*    height: 15.7vh;*/
 	height: 15vh;
     line-height: 15vh;
-    margin-bottom: 0.83vh;
+    margin-bottom: 0.25vh;
     position: relative;
     text-align: center;
     width: 18vh;
@@ -338,11 +338,19 @@ footer {
     text-align: center;
 }
 	
-#odkaz-ven {
+#menu.podstrana a#odkaz-ven {
 	display: none;
 	margin-top: 3vh;
+    width: 22vh;
+    height: 18vh;
+    right: 2vh;
+    line-height: 18vh;
+    font-size: 3vh
 }
 
+#menu.podstrana a#odkaz-ven p {
+    line-height: 3.5vh;
+}
 
 
 #clanek {
@@ -353,6 +361,12 @@ footer {
     text-align: justify;
     width: 100%;
 }
+
+#clanek a {
+    color: white;
+    text-decoration: none;
+}
+
 
 #clanek-obal {
 	background-color: rgba(50, 50, 50, 0.7);
@@ -471,6 +485,10 @@ footer {
 	color: #000000;
 }
 
+#akce-strediska .akce-obal .sestiuhelnik-obsah.hover {
+    background-color: rgb(150, 131, 163);
+}
+
 #akce-strediska .akce-obal .sestiuhelnik-obsah h2 {
 	display: inline-block;
     line-height: 0.7vw;
@@ -480,7 +498,7 @@ footer {
 	font-size: 0.7vw;
 }
 
-#akce-strediska .akce-obal .sestiuhelnik-obal-vnejsi {
+.akce-obal .sestiuhelnik-obal-vnejsi {
 	
 }
 
@@ -489,7 +507,20 @@ footer {
 	padding-top: 2vw;
 }
 
+.akce-text a {
+    text-decoration: none;
+    color: rgb(150, 131, 163);
+}
 
+.sestiuhelnik-obsah.hover {
+    display: none
+}
 
+#akce-strediska .sestiuhelnik-obal-vnejsi {
+    cursor: auto;
+}
 
+#akce-strediska a .sestiuhelnik-obal-vnejsi {
+    cursor: pointer;
+}
 

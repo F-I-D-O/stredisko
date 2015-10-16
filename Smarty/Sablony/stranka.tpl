@@ -150,15 +150,27 @@
                 <h1>Naše základna, akce a projekty střediska</h1>
                 {foreach #nadpisAkce# as $nadpis}
                     <div class="akce-obal {cycle values="licha,suda"}">
-                        <a class="akce-odkaz" target="_blank" href="{#odkazAkce#[$nadpis@index]}">
+                        {if !empty({#odkazAkce#[$nadpis@index]})}
+                            <a class="akce-odkaz" target="_blank" href="{#odkazAkce#[$nadpis@index]}">
+                        {else}
+                            <div class="akce-odkaz">
+                        {/if}
+                        
                             <div class="sestiuhelnik-obal-vnejsi">
                                 <div class="sestiuhelnik-obal-vnitrni">
-                                    <div class="sestiuhelnik-obsah">
+                                    <div class="sestiuhelnik-obsah no-over">
                                         <h2>{$nadpis}</h2>
+                                    </div>
+                                    <div class="sestiuhelnik-obsah hover">
+                                        <h2>Odkaz na web</h2>
                                     </div>
                                 </div>
                             </div>
-                        </a>
+                        {if !empty({#odkazAkce#[$nadpis@index]})}
+                            </a>
+                        {else}
+                            </div>
+                        {/if}
                         <div class="akce-text">{#textAkce#[$nadpis@index]}</div>
                     </div>    
                 {/foreach}
