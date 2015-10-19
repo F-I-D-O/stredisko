@@ -72,6 +72,7 @@
             </ul>
         </div>
         <div id="logo"></div>
+        <a href="http://www.skaut.cz/" target="_blank" id="logo-junak"></a>
         <div id="menu" class="titulka">
                     <a id='menu-2' class="sestiuhelnik-obal-vnejsi odkaz_stredisko">
                         <div class="sestiuhelnik-obal-vnitrni">
@@ -214,6 +215,12 @@
 					<div id="2" class="info" style="color: {#barvaStredisko#}">
 						<h1>{#nadpisStredisko#}</h1>
 						{#textStredisko#|ceskeZalamovaniPredlozek}
+                        <h2>Partneři</h2>
+                        <div id='loga'>
+                            {foreach $obrazkyLoga as $index => $adresa}
+                                <img title="logo" alt="logo" src="{$adresa}">
+                            {/foreach}
+                        </div>
 					</div>
 					<div id="23" class="info" style="color: {#barvaSeverka#}">
 						<h1>{#nadpisSeverka#}</h1>

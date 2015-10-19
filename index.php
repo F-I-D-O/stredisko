@@ -31,13 +31,15 @@ pripravObrazky(CESTA_ADRESAR_OBRAZKU_JIZNI_KRIZ, JMENO_JIZNI_KRIZ);
 pripravObrazky(CESTA_ADRESAR_OBRAZKU_VLOCKA, JMENO_VLOCKA);
 pripravObrazky(CESTA_ADRESAR_OBRAZKU_HIAWATHA, JMENO_HIAWATHA);
 
+pripravObrazky(CESTA_ADRESAR_OBRAZKU_LOGA, JMENO_LOGA);
+
 $smarty->display('stranka.tpl');
 
 
 
 
 function pripravObrazky($cesta, $jmenoPromenne){
-	$obrazky = glob($cesta . '/*.{jpg,jpeg,png,JPG,JPEG,PNG}', GLOB_BRACE);
+	$obrazky = glob($cesta . '/*.{gif,jpg,jpeg,png,GIF,JPG,JPEG,PNG}', GLOB_BRACE);
 	foreach ($obrazky as &$adresa){
 		$adresa = cestaNaAdresu($adresa);
 	}

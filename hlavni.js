@@ -178,6 +178,7 @@ function prepniTypStranky(stranka){
     if(stranka.id === 0){
         $('#menu').addClass('titulka');
         $('#logo').addClass('titulka');
+        $('#logo-junak').addClass('titulka');
         $('#menu').removeClass('podstrana');
         $('#podstrana').hide();
 		$('#menu > a').show();
@@ -202,6 +203,7 @@ function prepniTypStranky(stranka){
 		}		
         $('#menu').removeClass('titulka');
         $('#logo').removeClass('titulka');
+        $('#logo-junak').removeClass('titulka');
         $('#menu').addClass('podstrana');
         $('#podstrana').show();
 		nahrajBarvuPozadi(stranka);
