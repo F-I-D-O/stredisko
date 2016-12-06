@@ -543,8 +543,8 @@ footer {
     bottom: 5vh;
     left: 5vh;
     position: absolute;
-    width: 109px;
-    height: 170px;
-    background: url(Obrazky/logo-junak.png) no-repeat; 
+    width: 180px;
+    height: 194px;
+    background: url(Obrazky/logo-junak.png?v2) no-repeat; 
     z-index: 2;
 }
