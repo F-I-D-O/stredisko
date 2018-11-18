@@ -124,15 +124,17 @@ footer {
 	transform: rotate(-60deg);
 }
 
-/* menu titulka */
+/***********************
+	menu titulka
+************************/
 
 #menu.titulka {
     width: 125vh;
-	height: 82vh;
+	height: 98vh;
 	max-width: 100vw;
 	position: relative;
     margin: auto;
-	margin-top: 9vh;
+	margin-top: 1vh;
 }
 
 #menu.titulka a {
@@ -172,43 +174,55 @@ footer {
 	margin-top: 17vh;
 }
 
+/* pozice */
+
+/* vertikalni */
+#menu.titulka a.odkaz_stredisko, #menu.titulka a.odkaz_dalsi {
+	bottom: 2vh;
+}
+
+#menu.titulka a.odkaz_stenovice, #menu.titulka a.odkaz_severka{
+	top: 2vh;
+}
+
+
+#menu.titulka a.odkaz_jizni_kriz, #menu.titulka a.odkaz_vlocka, #menu.titulka a.odkaz_hiawatha{
+	top: 27vh;
+}
+
+/* horizontalni */
 
 #menu.titulka a.odkaz_stredisko {
 	width: 40vh;
 	height: 46.4vh;
-	top: 2vh;
-	left: 2vh;
+	left: 20vh;
     font-size: 4vh;
 }
 
 #menu.titulka a.odkaz_dalsi {
-	bottom: 2vh;
-	right: 2vh;	
+	right: 20vh;	
     font-size: 4vh;
 }
 
-#menu.titulka a.odkaz_severka, #menu.titulka a.odkaz_jizni_kriz {
-	top: 15.5vh;
+#menu.titulka a.odkaz_stenovice {
+	left: 27vh;
 }
 
 #menu.titulka a.odkaz_severka {
-	left: 44vh;
+	left: 72vh;
 }
 
 #menu.titulka a.odkaz_jizni_kriz {
-	left: 70vh;
+	left: 12vh;
 }
 
-#menu.titulka a.odkaz_vlocka, #menu.titulka a.odkaz_hiawatha {
-	top: 38.5vh;
-}
 
 #menu.titulka a.odkaz_vlocka {
-	left: 31vh;
+	left: 50vh;
 }
 
 #menu.titulka a.odkaz_hiawatha {
-	left: 57vh;
+	right: 12vh;
 }
 
 /* menu podstrana */
@@ -225,14 +239,14 @@ footer {
 #menu.podstrana a {
 	color: white;
     display: block;
-    font-size: 2.2vh;
+    font-size: 2.1vh;
 /*    height: 15.7vh;*/
-	height: 15vh;
-    line-height: 15vh;
+	height: 13vh;
+    line-height: 13vh;
     margin-bottom: 0.25vh;
     position: relative;
     text-align: center;
-    width: 18vh;
+    width: 15.6vh;
 }
 
 #menu.podstrana a p {
@@ -322,10 +336,10 @@ footer {
 	
 #menu.podstrana a#odkaz-ven {
 	display: none;
-	margin-top: 3vh;
+	margin-top: 1vh;
     width: 22vh;
     height: 18vh;
-    right: 2vh;
+    right: 3vh;
     line-height: 18vh;
     font-size: 3vh
 }

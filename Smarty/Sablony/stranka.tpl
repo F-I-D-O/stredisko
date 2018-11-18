@@ -54,6 +54,7 @@
 <body 
 	data-koren-webu="{$smarty.const.KOREN_WEBU}"
 	data-2='{literal}{{/literal}"barva": "{#barvaStredisko#}", "barvaSvetlejsi": "{#barvaStrediskoSvetlejsi#}"{literal}}{/literal}'
+	data-21='{literal}{{/literal}"barva": "{#barvaStenovice#}", "barvaSvetlejsi": "{#barvaStenoviceSvetlejsi#}"{literal}}{/literal}'
 	data-23='{literal}{{/literal}"barva": "{#barvaSeverka#}", "barvaSvetlejsi": "{#barvaSeverkaSvetlejsi#}"{literal}}{/literal}'
 	data-27='{literal}{{/literal}"barva": "{#barvaJizniKriz#}", "barvaSvetlejsi": "{#barvaJizniKrizSvetlejsi#}"{literal}}{/literal}'
 	data-28='{literal}{{/literal}"barva": "{#barvaVlocka#}", "barvaSvetlejsi": "{#barvaVlockaSvetlejsi#}"{literal}}{/literal}'
@@ -78,6 +79,13 @@
                         <div class="sestiuhelnik-obal-vnitrni">
                             <div class="sestiuhelnik-obsah" style="background-color: {#barvaStredisko#}">
                                 <p>{#nadpisStredisko#}</p>                           
+                            </div>
+                        </div>
+                    </a>
+					<a id='menu-21' class="odkaz_stenovice sestiuhelnik-obal-vnejsi">
+                        <div class="sestiuhelnik-obal-vnitrni">
+                            <div class="sestiuhelnik-obsah" style="background-color: {#barvaStenovice#}">
+                                <p>{#nadpisStenovice#}</p>
                             </div>
                         </div>
                     </a>
@@ -120,6 +128,7 @@
                                 
                     <a    id='odkaz-ven'
                         target="_blank"
+						data-21='{literal}{{/literal}"link": "{#odkazVenStenovice#}", "text": "{#textOdkazVenStenovice#}"{literal}}{/literal}'
                         data-23='{literal}{{/literal}"link": "{#odkazVenSeverka#}", "text": "{#textOdkazVenSeverka#}"{literal}}{/literal}'
                         data-27='{literal}{{/literal}"link": "{#odkazVenJizniKriz#}", "text": "{#textOdkazVenJizniKriz#}"{literal}}{/literal}'
                         data-28='{literal}{{/literal}"link": "{#odkazVenVlocka#}", "text": "{#textOdkazVenVlocka#}"{literal}}{/literal}'
@@ -188,6 +197,11 @@
                         <li><img title="{#nadpisStredisko#}" alt="{#nadpisStredisko#}" data-src="{$adresa}"></li>
                     {/foreach}
                 </ul>
+				 <ul class="hlavniSlider 21">
+                    {foreach $obrazkySeverka as $index => $adresa}
+                        <li><img title="{#nadpisStenovice#}" alt="{#nadpisStenovice#}" data-src="{$adresa}"></li>
+                    {/foreach}
+                </ul>
                 <ul class="hlavniSlider 23">
                     {foreach $obrazkySeverka as $index => $adresa}
                         <li><img title="{#nadpisSeverka#}" alt="{#nadpisSeverka#}" data-src="{$adresa}"></li>
@@ -221,6 +235,10 @@
                                 <img title="logo" alt="logo" src="{$adresa}">
                             {/foreach}
                         </div>
+					</div>
+					<div id="21" class="info" style="color: {#barvaStenovice#}">
+						<h1>{#nadpisStenovice#}</h1>
+						{#textStenovice#|ceskeZalamovaniPredlozek}
 					</div>
 					<div id="23" class="info" style="color: {#barvaSeverka#}">
 						<h1>{#nadpisSeverka#}</h1>

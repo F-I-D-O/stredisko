@@ -89,6 +89,7 @@ addCSSRule("#nothing0", "background-color: #000000", 0);
 var mapaStranek = new Object();
 mapaStranek[''] = new Stranka("", 0);
 mapaStranek['stredisko'] = new Stranka("stredisko", 2);
+mapaStranek['stenovice'] = new Stranka("stenovice", 21);
 mapaStranek['severka'] = new Stranka("severka", 23);
 mapaStranek['jiznikriz'] = new Stranka("jiznikriz", 27);
 mapaStranek['vlocka'] = new Stranka("vlocka", 28);
@@ -112,6 +113,10 @@ $(".odkaz_stredisko").click(function(){
 
 $(".odkaz_dalsi").click(function(){
     nahrajStranku(mapaStranek.get('projekty'));
+});
+
+$(".odkaz_stenovice").click(function(){
+	nahrajStranku(mapaStranek.get('stenovice'));
 });
 
 $(".odkaz_severka").click(function(){
